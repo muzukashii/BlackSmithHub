@@ -41,16 +41,14 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
+.controller('DeveloperListsCtrl', function($scope) {
+  $scope.devlists = [
+    { title: 'Mr.Pranpoom Dissayakamon', id: 1 },
+    { title: 'Mr.Narutchai Pipatwasukun', id: 2 },
+    { title: 'Mr.Peerapat Jommanee', id: 3 }
   ];
 })
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
+.controller('DeveloperListCtrl', function($scope, $stateParams) {
+
 });
