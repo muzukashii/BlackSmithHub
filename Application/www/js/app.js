@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers'])
+angular.module('starter', ['ionic','ionic.service.core', 'starter.controllers','ngCordova'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -21,7 +21,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   });
 })
-
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
 
@@ -31,36 +30,45 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     templateUrl: 'templates/menu.html',
     controller: 'AppCtrl'
   })
+    .state('app.home', {
+      url: '/home',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/Home.html'
+        }
+      }
+    })
 
-  .state('app.search', {
-    url: '/search',
+  .state('app.shop', {
+    url: '/shop',
     views: {
       'menuContent': {
-        templateUrl: 'templates/search.html'
+        templateUrl: 'templates/Shop.html'
       }
     }
   })
 
-  .state('app.browse', {
-      url: '/browse',
+  .state('app.Map', {
+      url: '/Map',
       views: {
         'menuContent': {
-          templateUrl: 'templates/browse.html'
+          templateUrl: 'templates/Map.html',
+          controller:'MapCtrl'
         }
       }
     })
-    .state('app.Developer', {
-      url: '/Developer',
+    .state('app.AboutUs', {
+      url: '/AboutUs',
       views: {
         'menuContent': {
-          templateUrl: 'templates/Developer.html',
+          templateUrl: 'templates/AboutUs.html',
           controller: 'DeveloperListsCtrl'
         }
       }
     })
 
   .state('app.single', {
-    url: '/Developer/:playlistId',
+    url: '/AboutUs/:playlistId',
     views: {
       'menuContent': {
         templateUrl: 'templates/devlist.html',
@@ -70,4 +78,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
   });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/Developer');
-});
+})
+  .config( [
+     '$compileProvider',
+     function( $compileProvider )
+     {
+    $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|chrome-extension):/);
+  $compileProvider.imgSrcSanitizationWhitelist(/^\s*(https?|local|data):/);
+ }
+ ]);
