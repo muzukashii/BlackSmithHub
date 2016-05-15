@@ -1,11 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html ng-app="app">
   <head>
     <meta charset="utf-8">
-    <title>app</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <meta name="author" content="">
+
+    <title>Modern Business - Start Bootstrap Template</title>
+
+
 
     <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
     <!-- bower:css -->
@@ -18,52 +22,151 @@
     <!-- css files will be automatically insert here -->
     <!-- endinject -->
     <!-- endbuild -->
+    <!-- /.container -->
+
+
   </head>
   <body>
-  <div class="page-header">
-    <h1>CAMT
-      <small>Software Component Based Software Development</small>
-    </h1>
-
-  </div>
-  <div class="navbar navbar-default" ng-controller="LanguageController">
-    <div class="container-fluid">
-      <div class="collapse navbar-collapse">
-        <!--<div ng-include src ="'app/security/login.html'"></div>-->
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" ng-href="/index">Start Bootstrap</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li  ng-show="hasRole('ForeignUser')" ng-class="{'active':currentLocale== 'en'}" ><a href="" ng-click="changeLanguage('en')" >EN </a></li>
-          <li  ng-show="hasRole('ForeignUser')" ng-class="{'active':currentLocale== 'fr'}" ><a href="" ng-click="changeLanguage('fr')" >FR</a></li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="#/Product1">Services</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown">Product <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li ng-class="{true: 'active'}[menuActive('/Product1')]">
+                <a href="#/Product1">1 Column Portfolio</a>
+              </li>
+              <li ng-class="{true: 'active'}[menuActive('/Product2')]">
+                <a href="#/Product2">2 Column Portfolio</a>
+              </li>
+              <li ng-class="{true: 'active'}[menuActive('/Product3')]">
+                <a href="#/Product3">3 Column Portfolio</a>
+              </li>
+              <li ng-class="{true: 'active'}[menuActive('/Product4')]">
+                <a href="#/Product4">4 Column Portfolio</a>
+              </li>
+              <li ng-class="{true: 'active'}[menuActive('/ProductItem')]">
+                <a href="#/ProductItem">Single Portfolio Item</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="blog-home-1.html">Blog Home 1</a>
+              </li>
+              <li>
+                <a href="blog-home-2.html">Blog Home 2</a>
+              </li>
+              <li>
+                <a href="blog-post.html">Blog Post</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="full-width.html">Full Width Page</a>
+              </li>
+              <li>
+                <a href="sidebar.html">Sidebar Page</a>
+              </li>
+              <li>
+                <a href="faq.html">FAQ</a>
+              </li>
+              <li>
+                <a href="404.html">404</a>
+              </li>
+              <li>
+                <a href="pricing.html">Pricing Table</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </div>
+      <!-- /.navbar-collapse -->
     </div>
-  </div>
-  <div class="container ng-hide" ng-show = "initialized">
-    <div class="alert alert-dangeer" ng-show="error">{{error}}</div>
-  </div>
+    <!-- /.container -->
+  </nav>
 
-  <div class="container-fluid">
+  <ng-view></ng-view>
+
+  <hr>
+  <div class="container">
+  <!-- Footer -->
+  <footer>
     <div class="row">
-      <div class="col-md-2">
-        <!-- Fixed left nav column -->
-        <div ng-include src="'app/component/leftnav.html'"></div>
-      </div>
-      <div class="col-md-10">
-        <!-- Breadcrumbs
-       ================================================== -->
-
-
-        <ng-view>Loading...</ng-view>
-
+      <div class="col-lg-8">
+        <p>Copyright &copy; Your Website 2014</p>
       </div>
     </div>
+  </footer>
   </div>
+  </body>
+
+
+  <!--<div class="navbar navbar-default" ng-controller="LanguageController">-->
+    <!--<div class="container-fluid">-->
+      <!--<div class="collapse navbar-collapse">-->
+        <!--&lt;!&ndash;<div ng-include src ="'app/security/login.html'"></div>&ndash;&gt;-->
+        <!--<ul class="nav navbar-nav navbar-right">-->
+          <!--<li  ng-show="hasRole('ForeignUser')" ng-class="{'active':currentLocale== 'en'}" ><a href="" ng-click="changeLanguage('en')" >EN </a></li>-->
+          <!--<li  ng-show="hasRole('ForeignUser')" ng-class="{'active':currentLocale== 'fr'}" ><a href="" ng-click="changeLanguage('fr')" >FR</a></li>-->
+        <!--</ul>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+  <!--<div class="container ng-hide" ng-show = "initialized">-->
+    <!--<div class="alert alert-dangeer" ng-show="error">{{error}}</div>-->
+  <!--</div>-->
+
+  <!--<div class="container-fluid">-->
+    <!--<div class="row">-->
+      <!--<div class="col-md-2">-->
+        <!--&lt;!&ndash; Fixed left nav column &ndash;&gt;-->
+        <!--<div ng-include src="'app/component/leftnav.html'"></div>-->
+      <!--</div>-->
+      <!--<div class="col-md-10">-->
+        <!--&lt;!&ndash; Breadcrumbs-->
+       <!--================================================== &ndash;&gt;-->
+
+
+        <!--<ng-view>Loading...</ng-view>-->
+
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
 
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
 
-  </body>
+
 
     <!-- build:js(src) scripts/vendor.js -->
     <!-- bower:js -->
@@ -80,6 +183,4 @@
     <!-- angular templates will be automatically converted in js and inserted here -->
     <!-- endinject -->
     <!-- endbuild -->
-
-  </body>
 </html>

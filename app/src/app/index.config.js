@@ -3,7 +3,7 @@
 
   angular
     .module('app')
-    .config(configTranslation)
+    // .config(configTranslation)
     .config(configCompilerProvider)
     .config(configFlowFactoryProvider)
     .config(configFailRequestRedirect);
@@ -22,7 +22,7 @@
           var url=config.url;
 
           if(status == 401){
-            $location.path("/listProduct");
+            $location.path("/Product1");
           }else {
             $rootScope.error = method + "on" + url + "failed with status" + status;
           }
@@ -59,13 +59,13 @@
   }
 
 
-  /** @ngInject */
-  function configTranslation($translateProvider){
-    $translateProvider.useUrlLoader('http://localhost:8080/messageBundle');
-    $translateProvider.useStorage('UrlLanguageStorage');
-    $translateProvider.preferredLanguage('en');
-    $translateProvider.fallbackLanguage('en');
-  }
+  // /** @ngInject */
+  // function configTranslation($translateProvider){
+  //   $translateProvider.useUrlLoader('http://localhost:8080/messageBundle');
+  //   $translateProvider.useStorage('UrlLanguageStorage');
+  //   $translateProvider.preferredLanguage('en');
+  //   $translateProvider.fallbackLanguage('en');
+  // }
 
   /** @ngInject */
   function configFlowFactoryProvider (flowFactoryProvider) {
