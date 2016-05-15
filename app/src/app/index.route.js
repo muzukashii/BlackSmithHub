@@ -10,20 +10,8 @@
     when('/',{
       templateUrl: 'app/main/main.html'
     }).
-    when('/Product1',{
-      templateUrl: 'app/product/ProductT1.html'
-    }).
-    when('/Product2',{
-      templateUrl: 'app/product/ProductT2.html'
-    }).
-    when('/Product3',{
-      templateUrl: 'app/product/ProductT3.html'
-    }).
-    when('/Product4',{
-      templateUrl: 'app/product/ProductT4.html'
-    }).
-    when('/ProductItem',{
-      templateUrl: 'app/product/ProductItem.html'
+    when('/index',{
+      templateUrl: 'app/main/main.html'
     }).
     // when('/addProduct',{
     //   templateUrl: 'app/product/editProduct.html',
