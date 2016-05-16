@@ -2,9 +2,8 @@
  *  If you want to override some bootstrap variables, you have to change values here.
  *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
  */
-$navbar-inverse-link-color: #5AADBB;
 $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
-
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -76,6 +75,9 @@ sup {
   font-size: 75%;
   line-height: 0;
   vertical-align: baseline;
+}
+li{
+  cursor: pointer;
 }
 sup {
   top: -.5em;
@@ -6847,8 +6849,8 @@ footer {
 
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../../component/font-awesome/fonts/fontawesome-webfont.eot?v=4.2.0');
-  src: url('../../component/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('../../component/font-awesome/fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../../component/font-awesome/fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../../component/font-awesome/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
+  src: url('../app/fonts/fontawesome-webfont.eot?v=4.2.0');
+  src: url('../app/fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('../app/fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../app/fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../app/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }

@@ -9,8 +9,6 @@
 
     <title>Modern Business - Start Bootstrap Template</title>
 
-
-
     <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
     <!-- bower:css -->
     <!-- run `gulp inject` to automatically populate bower styles dependencies -->
@@ -38,71 +36,71 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" ng-href="/index">Start Bootstrap</a>
+        <a class="navbar-brand" ng-href="#/index">Start Bootstrap</a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="about.html">About</a>
+            <a href="#/About">About</a>
           </li>
           <li>
-            <a href="#/Product1">Services</a>
+            <a href="#/Service">Services</a>
           </li>
           <li>
-            <a href="contact.html">Contact</a>
+            <a href="#/Contact">Contact</a>
           </li>
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown">Product <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li ng-class="{true: 'active'}[menuActive('/Product1')]">
-                <a href="#/Product1">1 Column Portfolio</a>
+                <a href="#/Product1">Product Type1</a>
               </li>
               <li ng-class="{true: 'active'}[menuActive('/Product2')]">
-                <a href="#/Product2">2 Column Portfolio</a>
+                <a href="#/Product2">Product Type2</a>
               </li>
               <li ng-class="{true: 'active'}[menuActive('/Product3')]">
-                <a href="#/Product3">3 Column Portfolio</a>
+                <a href="#/Product3">Product Type3</a>
               </li>
               <li ng-class="{true: 'active'}[menuActive('/Product4')]">
-                <a href="#/Product4">4 Column Portfolio</a>
+                <a href="#/Product4">Product Type4</a>
               </li>
               <li ng-class="{true: 'active'}[menuActive('/ProductItem')]">
-                <a href="#/ProductItem">Single Portfolio Item</a>
+                <a href="#/ProductItem">Product Item</a>
               </li>
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+            <a class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li>
-                <a href="blog-home-1.html">Blog Home 1</a>
+                <a href="#/Blog1">Blog Home 1</a>
               </li>
               <li>
-                <a href="blog-home-2.html">Blog Home 2</a>
+                <a href="#/Blog2">Blog Home 2</a>
               </li>
               <li>
-                <a href="blog-post.html">Blog Post</a>
+                <a href="#/BlogPost">Blog Post</a>
               </li>
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
+            <a class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li>
-                <a href="full-width.html">Full Width Page</a>
+                <a href="#/FullWidth">Full Width Page</a>
               </li>
               <li>
-                <a href="sidebar.html">Sidebar Page</a>
+                <a href="#/SideBar">Sidebar Page</a>
               </li>
               <li>
-                <a href="faq.html">FAQ</a>
+                <a href="#/FAQ">FAQ</a>
               </li>
               <li>
-                <a href="404.html">404</a>
+                <a href="#/404Page">404</a>
               </li>
               <li>
-                <a href="pricing.html">Pricing Table</a>
+                <a href="#/Pricing">Pricing Table</a>
               </li>
             </ul>
           </li>
@@ -127,6 +125,8 @@
   </footer>
   </div>
   </body>
+  <script src="app/JS/bootstrap.min.js"></script>
+  <script src="app/JS/jquery.js"></script>
 
 
   <!--<div class="navbar navbar-default" ng-controller="LanguageController">-->
