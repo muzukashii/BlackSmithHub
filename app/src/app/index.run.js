@@ -26,12 +26,12 @@
       delete $rootScope.user;
       delete $rootScope.authToken;
       $cookies.remove('authToken');
-      $location.path("/location")
+      $location.path("/")
     }
 
     /*Try getting valid user from cookie or go to login page */
     var originalPath=$location.path();
-    $location.path("/location");
+    $location.path("/");
     var authToken = $cookies.get('authToken');
     if(authToken != undefined){
       $rootScope.authToken = authToken;
@@ -48,5 +48,4 @@
 
     $log.debug('runBlock end');
   }
-
 })();
