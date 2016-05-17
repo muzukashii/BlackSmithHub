@@ -10,6 +10,7 @@
     <title>Modern Business - Start Bootstrap Template</title>
 
     <script src="app/Backup/CSS/bootstrap.min.css"></script>
+
     <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
     <!-- bower:css -->
     <!-- run `gulp inject` to automatically populate bower styles dependencies -->
@@ -25,7 +26,7 @@
 
 
   </head>
-  <body>
+  <body ng-controller = "LoginController as login" >
   <!-- Navigation -->
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
@@ -37,7 +38,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" ng-href="#/index">Start Bootstrap</a>
+        <a class="navbar-brand" ng-href="#/index">Wat Pha Som</a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -105,12 +106,76 @@
               </li>
             </ul>
           </li>
+          <li>
+            <button class="btn btn-primary btn-nav" data-toggle="modal" data-target="#Modal-Login" ng-hide="user">Login</button>
+          </li>
+          <li>
+            <a ng-show="user">Hello !! {{user.name}}</a>
+          </li>
+          <li>
+            <button type="submit" ng-show="user" class="btn btn-danger btn-nav" ng-click="logout()">LogOut</button>
+          </li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
     </div>
     <!-- /.container -->
   </nav>
+  <!-- MODAL -->
+  <div class="modal fade" id="Modal-Login" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">
+        <span aria-hidden="true" class="glyphicon glyphicon-remove"></span>
+      </button>
+      <h3 class="modal-title" id="modal-login-label">Login to our site</h3>
+      <p>Enter your username and password to log on:</p>
+    </div>
+
+    <div class="modal-body">
+      <form class="login-form">
+        <div class="form-group">
+          <label class="sr-only" for="username">Username</label>
+          <input type="text" placeholder="Username..." class="form-control" id="username" ng-model ="login.username">
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for="password">Password</label>
+          <input type="password" placeholder="Password..." class="form-control" id="password" ng-model ="login.password">
+        </div>
+        <div class="form-group">
+        <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#Modal-Prompt" ng-click="login.login()" data-dismiss="modal">Sign in!</button>
+          </div>
+      </form>
+    </div>
+    </div>
+      </div>
+
+  </div>
+  <!--<li>-->
+    <!--<a class="alert alert-danger" style="color: white;" ng-show="error">{{error}}</a>-->
+  <!--</li>-->
+
+  <!-- Modal -->
+  <div class="modal fade" id="Modal-Prompt" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" >{{HeadSuccess}}</h4>
+          <h4 class="modal-title" ng-hide="result">{{HeadFail}}</h4>
+        </div>
+        <div class="modal-body">
+          <p style="color: white" >{{result}}</p>
+          <p style="color: white" ng-hide="result">{{error}}</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <ng-view></ng-view>
 
@@ -125,6 +190,7 @@
     </div>
   </footer>
   </div>
+
   </body>
   <script src="app/JS/bootstrap.min.js"></script>
   <script src="app/JS/jquery.js"></script>

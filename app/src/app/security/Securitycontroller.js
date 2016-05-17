@@ -38,6 +38,10 @@
       UserService.authenticate(serializeData ({username:vm.username,password:vm.password}),
       // success connection
       function (authenticationResult) {
+        $rootScope.HeadSuccess=null;
+        $rootScope.HeadFail=null;
+        $rootScope.result=null;
+        $rootScope.error=null;
         var authToken = authenticationResult.token;
         $rootScope.authToken = authToken;
         if (vm.rememberMe) {
@@ -45,11 +49,14 @@
         }
         UserService.get(function (user) {
           $rootScope.user = user;
-          $location.path("/")
+          $rootScope.HeadSuccess ="Welcome";
+          $rootScope.result = "Login Success";
+          $location.path("/index")
         })
       },//unsuccess connection
         function(error) {
           if(error.status=="401"){
+            $rootScope.HeadFail ="Warning";
             $rootScope.error="username or password is not correct";
           }
         }

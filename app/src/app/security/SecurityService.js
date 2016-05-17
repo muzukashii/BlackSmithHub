@@ -1,6 +1,4 @@
-/**
- * Created by Bitee on 4/20/2016.
- */
+
 (function () {
   'use strict';
   angular

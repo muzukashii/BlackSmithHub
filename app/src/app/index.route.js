@@ -14,10 +14,14 @@
       templateUrl: 'app/main/main.html'
     }).
     when('/Product1',{
-      templateUrl: 'app/product/ProductT1.html'
+      templateUrl: 'app/product/ProductT1.html',
+      controller: 'listProductController',
+      controllerAs: 'vm'
     }).
     when('/Product2',{
-      templateUrl: 'app/product/ProductT2.html'
+      templateUrl: 'app/product/ProductT2.html',
+      controller: 'listProductController',
+      controllerAs: 'vm'
     }).
     when('/Product3',{
       templateUrl: 'app/product/ProductT3.html'
@@ -86,7 +90,7 @@
     //   templateUrl: 'app/CheckIn/Location.html',
     //   controller: 'locationController'
     // }).
-    otherwise({redirectTo: '/index'});
+    otherwise({redirectTo: '/'});
 
   }
 

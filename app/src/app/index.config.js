@@ -22,7 +22,7 @@
           var url=config.url;
 
           if(status == 401){
-            $location.path("/Product1");
+            $location.path("/");
           }else {
             $rootScope.error = method + "on" + url + "failed with status" + status;
           }

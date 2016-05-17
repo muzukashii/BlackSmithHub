@@ -29,6 +29,8 @@
       $location.path("/")
     };
 
+
+
     /*Try getting valid user from cookie or go to login page */
     var originalPath=$location.path();
     $location.path("/");
