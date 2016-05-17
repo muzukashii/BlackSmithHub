@@ -73,11 +73,12 @@
     var vm = this;
     vm.addPerson = false;
     vm.editPerson = true;
+    vm.productDetail = null;
     var id = $routeParams.id;
     productService.get({id:id},
       // success function
      function(data){
-       vm.product=data;
+       vm.productDetail=data;
      }
     )
 

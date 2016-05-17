@@ -4,42 +4,42 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Two Column Portfolio
-                    <small>Subheading</small>
+                <h1 class="page-header">Product
+                    <small>2 Column View</small>
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a>
+                    <li><a href="/#index">Home</a>
                     </li>
-                    <li class="active">Two Column Portfolio</li>
+                    <li class="active">Product Stock</li>
+                  <div class="dropdown Fix">
+                    <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      View Type
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <a href="#/Product1" class="list-group-item"> 1 Column View </a>
+                      <a href="#/Product2" class="list-group-item"> 2 Column View </a>
+                      <a href="#/Product3" class="list-group-item"> 3 Column View </a>
+                      <a href="#/Product4" class="list-group-item"> Picture View </a>
+                    </div>
+                  </div>
                 </ol>
             </div>
         </div>
         <!-- /.row -->
 
         <!-- Projects Row -->
-        <div class="row" ng-repeat="product in vm.products">
-            <div class="col-md-6 img-portfolio">
-              <div class="col-md-7">
+        <div class="row">
+            <div class="col-md-6 img-portfolio border" ng-repeat="product in vm.products">
+              <div class="col-md-7 img-hover2" ng-repeat="image in product.images" ng-if="$index%2==0">
                 <a href="#/ProductItem">
-                  <img class="img-responsive img-hover" ng-src="data:{{image.contentType}};base64,{{image.content}}" alt="">
+                  <img class="img-responsive" ng-src="data:{{image.contentType}};base64,{{image.content}}" alt="">
                 </a>
               </div>
                 <h3>
-                    <a href="portfolio-item.html">{{product.name}}</a>
+                    <a href="#/ProductItem">{{product.name}}</a>
                 </h3>
               <p>{{product.description}}</p>
             </div>
-          <div class="col-md-6 img-portfolio" ng-if="product.length>($index+1)">
-            <div class="col-md-7">
-              <a href="#/ProductItem">
-                <img class="img-responsive img-hover" ng-src="data:{{image.contentType}};base64,{{image.content}}" alt="">
-              </a>
-            </div>
-            <h3>
-              <a href="portfolio-item.html">{{product.name}}</a>
-            </h3>
-            <p>{{product.description}}</p>
-          </div>
         </div>
         <!-- /.row -->
 

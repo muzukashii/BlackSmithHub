@@ -24,13 +24,18 @@
       controllerAs: 'vm'
     }).
     when('/Product3',{
-      templateUrl: 'app/product/ProductT3.html'
+      templateUrl: 'app/product/ProductT3.html',
+      controller: 'listProductController',
+      controllerAs: 'vm'
     }).
     when('/Product4',{
-      templateUrl: 'app/product/ProductT4.html'
+      templateUrl: 'app/product/ProductT4.html',
+      controller: 'listProductController',
+      controllerAs: 'vm'
     }).
-    when('/ProductItem',{
-      templateUrl: 'app/product/ProductItem.html'
+    when('/ProductItem/:id',{
+      templateUrl: 'app/product/ProductItem.html',
+        controller: 'editProductController'
     }).
     when('/About',{
       templateUrl: 'app/Extras/about.html'

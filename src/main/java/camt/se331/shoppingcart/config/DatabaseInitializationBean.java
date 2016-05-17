@@ -29,12 +29,12 @@ public class DatabaseInitializationBean implements InitializingBean {
     @Override
     public void afterPropertiesSet() throws Exception {
         Product[] initProduct =  {
-                new Product(1l,"Kindle","the good book reader",6900.00, ImageUtil.getImage("pic/x.png")),
-                new Product(2l,"Surface Pro","The unknow computer",34000.00,ImageUtil.getImage("pic/x.png")),
-                new Product(3l,"Mac pro"," Mac book interim",44000.00,ImageUtil.getImage("pic/x.png")),
-                new Product(4l,"Candle","use for lightenup the world",10.00,ImageUtil.getImage("pic/x.png")),
-                new Product(5l,"Bin","User for what ?",200.00,ImageUtil.getImage("pic/x.png")),
-                new Product(6l,"Telephone", "Call the others",150.00,ImageUtil.getImage("pic/x.png")),
+                new Product(1l,"Kindle","the good book reader",6900.00, ImageUtil.getImage("pic/yeoman.png")),
+                new Product(2l,"Surface Pro","The unknow computer",34000.00,ImageUtil.getImage("pic/angular.png")),
+                new Product(3l,"Mac pro"," Mac book interim",44000.00,ImageUtil.getImage("pic/bootstrap.png")),
+                new Product(4l,"Candle","use for lightenup the world",10.00,ImageUtil.getImage("pic/gulp.png")),
+                new Product(5l,"Bin","User for what ?",200.00,ImageUtil.getImage("pic/jasmine.png")),
+                new Product(6l,"Telephone", "Call the others",150.00,ImageUtil.getImage("pic/karma.png")),
                 new Product(7l,"iPhone","What is it?",26000.00,ImageUtil.getImage("pic/x.png")),
                 new Product(8l,"Galaxy Note 4","Who still use this ?",24000.00,ImageUtil.getImage("pic/x.png")),
                 new Product(9l,"AngularJS","we hate it",2000.00,ImageUtil.getImage("pic/x.png")),

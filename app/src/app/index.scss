@@ -3005,6 +3005,102 @@ select[multiple].input-lg {
     font-size: 12px;
   }
 }
+.row{
+  margin-bottom: 15px !important;
+  margin-top: 15px !important;
+}
+.Fix{
+  margin-top: 5px;
+}
+.img-hover1 img{
+  position: absolute!important;
+  margin: auto !important;
+  max-width: 250px!important;
+  max-height: 300px!important;
+  height: auto;
+  width: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.img-hover2 img{
+  position: absolute!important;
+  margin: auto !important;
+  max-width: 250px!important;
+  max-height: 300px!important;
+  height: auto;
+  width: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.img-hover3 img{
+  position: absolute!important;
+  margin: auto !important;
+  max-width: 250px!important;
+  max-height: 300px!important;
+  height: auto;
+  width: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.img-hover4 img{
+  position: absolute!important;
+  margin: auto !important;
+  max-width: 250px!important;
+  max-height: 300px!important;
+  height: auto;
+  width: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.img-hover1{
+  height: 300px;
+  width: 700px;
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
+}
+.img-hover2{
+  height: 300px!important;
+  width: 350px!important;
+  margin-left: 15px!important;
+  margin-bottom: 15px!important;
+  margin-right: 15px!important;
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
+}
+.img-hover3{
+  height: 300px!important;
+  width: 350px!important;
+  margin-left: 15px!important;
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
+}
+.img-hover4{
+  height: 250px!important;
+  width: 250px!important;
+  margin-left: 15px!important;
+  border: 2px solid whitesmoke;
+  border-radius: 50%;
+}
+.img-hover2:hover,
+.img-hover3:hover,
+.img-hover4:hover{
+  opacity: 0.5;
+}
+.border{
+  -moz-border-bottom-colors: none;
+  -moz-border-image: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  border-bottom: 1px solid #dadada;
+}
 .btn-link-1 {
   height: 40%;
   display: inline-block;
@@ -3543,7 +3639,7 @@ tbody.collapse.in {
   display: none;
   float: left;
   min-width: 160px;
-  padding: 5px 0;
+  padding:0!important;
   margin: 2px 0 0;
   font-size: 14px;
   text-align: left;

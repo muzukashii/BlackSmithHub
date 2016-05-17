@@ -54,8 +54,8 @@
           <td class="text-right" ng-show="hasRole('admin')">{{product.totalPrice | number}}</td>
           <td>
             <div ng-repeat="image in product.images" class="text-center" class="thumbnail">
-              <img ng-src="data:{{image.contentType}};base64,{{image.content}}">
-            </div>
+            <img ng-src="data:{{image.contentType}};base64,{{image.content}}">
+          </div>
           </td>
           <td class="text-center"><a ng-href="#/editProduct/{{product.id}}"> <span class="glyphicon glyphicon-edit"
                                                                                    aria-hidden="true"></span></a></td>
