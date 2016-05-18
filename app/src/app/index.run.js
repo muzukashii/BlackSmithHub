@@ -31,11 +31,7 @@
 
     /*Try getting valid user from cookie or go to login page */
     var originalPath=$location.path();
-<<<<<<< HEAD
     $location.path("/index");
-=======
-    // $location.path("/");
->>>>>>> 88c1b74e4c3174b584f7ea050d83fc56350f4e27
     var authToken = $cookies.get('authToken');
     if(authToken != undefined){
       $rootScope.authToken = authToken;

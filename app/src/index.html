@@ -7,9 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Wat Pha Som</title>
-
-    <script src="app/Backup/CSS/bootstrap.min.css"></script>
+    <title>Modern Business - Start Bootstrap Template</title>
 
     <script src="app/Backup/CSS/bootstrap.min.css"></script>
 
@@ -93,29 +91,15 @@
           <li>
             <a href="#/shoppingCart" ng-show="hasRole('user')">Shopping Cart</a>
           </li>
-<<<<<<< HEAD
 
           <li>
             <button class="btn btn-primary btn-nav" data-toggle="modal" data-target="#Modal-Login" ng-hide="user">Login</button>
-=======
-          <li>
-            <a href="#/Product1">Product</a>
->>>>>>> 88c1b74e4c3174b584f7ea050d83fc56350f4e27
           </li>
           <li>
             <a style="color: yellow!important;" ng-show="user">Hello !! {{user.name}}</a>
           </li>
           <li>
             <button type="submit" ng-show="user" class="btn btn-danger btn-nav" data-toggle="modal" data-target="#Modal-Prompt2" ng-click="logout()">LogOut</button>
-          </li>
-          <li>
-            <button class="btn btn-primary btn-nav" data-toggle="modal" data-target="#Modal-Login" ng-hide="user">Login</button>
-          </li>
-          <li>
-            <a ng-show="user">Hello !! {{user.name}}</a>
-          </li>
-          <li>
-            <button type="submit" ng-show="user" class="btn btn-danger btn-nav" ng-click="logout()">LogOut</button>
           </li>
         </ul>
       </div>
@@ -146,7 +130,6 @@
           <input type="password" placeholder="Password..." class="form-control" id="password" ng-model ="login.password">
         </div>
         <div class="form-group">
-<<<<<<< HEAD
             <div class="checkbox">
               <label style="color: white">
                 <input type="checkbox" ng-model="login.rememberMe"> Remember me
@@ -154,8 +137,6 @@
             </div>
         </div>
         <div class="form-group">
-=======
->>>>>>> 88c1b74e4c3174b584f7ea050d83fc56350f4e27
         <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#Modal-Prompt" ng-click="login.login()" data-dismiss="modal">Sign in!</button>
           </div>
       </form>
@@ -188,7 +169,6 @@
     </div>
   </div>
 
-<<<<<<< HEAD
   <!-- Modal -->
   <div class="modal fade" id="Modal-Prompt2" role="dialog">
     <div class="modal-dialog modal-sm">
@@ -207,8 +187,6 @@
     </div>
   </div>
 
-=======
->>>>>>> 88c1b74e4c3174b584f7ea050d83fc56350f4e27
 
   <ng-view></ng-view>
 

@@ -37,7 +37,6 @@
       templateUrl: 'app/product/ProductItem.html',
       controller: 'viewProductController',
       controllerAs: 'vm'
-<<<<<<< HEAD
     }).
     when('/shoppingCart/:id',{
       templateUrl: 'app/shoppingcart/shoppingCart.html',
@@ -49,8 +48,6 @@
       controller: 'shoppingCartController',
       controllerAs: 'vm'
 
-=======
->>>>>>> 88c1b74e4c3174b584f7ea050d83fc56350f4e27
     }).
     when('/About',{
       templateUrl: 'app/Extras/about.html'
