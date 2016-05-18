@@ -5,6 +5,7 @@
     .module('app')
     .controller('addProductController', addProductController)
     .controller('listProductController', listProductController)
+    .controller('viewProductController',viewProductController)
     .controller('editProductController', editProductController);
 
 
@@ -69,16 +70,28 @@
 
 
   /** @ngInject */
+  function viewProductController($routeParams, productService) {
+    var vm = this;
+    var id = $routeParams.id;
+    vm.imageProduct=null;
+    vm.productDetail=null;
+    productService.get({id:id},function (data) {
+      vm.productDetail=data;
+      vm.imageProduct = vm.productDetail.images;
+    })
+
+  }
+
+  /** @ngInject */
   function editProductController( $http, $routeParams, $location, $rootScope, productService) {
     var vm = this;
     vm.addPerson = false;
     vm.editPerson = true;
-    vm.productDetail = null;
     var id = $routeParams.id;
     productService.get({id:id},
       // success function
      function(data){
-       vm.productDetail=data;
+       vm.product=data;
      }
     )
 

@@ -1,5 +1,5 @@
 package camt.se331.shoppingcart.config;
-  
+
 
 import camt.se331.shoppingcart.common.SerializableResourceBundleMessageSource;
 import org.springframework.context.MessageSource;
@@ -17,41 +17,34 @@ import org.springframework.web.servlet.view.UrlBasedViewResolver;
 import java.util.Locale;
 
 @EnableWebMvc
-@Configuration 
+@Configuration
 @ComponentScan(basePackages = {"camt.se331.shoppingcart"})
 @EnableAspectJAutoProxy
 @Import({PersistenceContext.class})
 public class AppConfig extends WebMvcConfigurerAdapter {
-    @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/**").addResourceLocations("/views/").setCachePeriod(31556926);
-        registry.addResourceHandler("/js/**").addResourceLocations("/views/js/").setCachePeriod(31556926);
-        registry.addResourceHandler("/bower_components/**").addResourceLocations("/views/bower_components/");
-    }
-
+//    @Override
+//    public void addCorsMappings(CorsRegistry registry) {
+//        registry.addMapping("/**")
+//                .allowCredentials(false)
+//                .allowedOrigins("*")
+//                .allowedMethods("PUT", "POST", "GET", "OPTIONS", "DELETE")
+//                .exposedHeaders("Authorization", "Content-Type");
+//    }
     @Override
     public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
         configurer.enable();
     }
-	@Bean  
-    public UrlBasedViewResolver setupViewResolver() {  
-        UrlBasedViewResolver resolver = new UrlBasedViewResolver();  
-        resolver.setPrefix("/views/");  
-        resolver.setSuffix(".jsp");  
-        resolver.setViewClass(JstlView.class);  
-        return resolver;  
-    }
 
     // The localization here
     @Bean
-    public LocaleResolver localeResolver(){
+    public LocaleResolver localeResolver() {
         final SessionLocaleResolver ret = new SessionLocaleResolver();
         ret.setDefaultLocale(new Locale("en"));
         return ret;
     }
 
     @Bean
-    public MessageSource messageSource(){
+    public MessageSource messageSource() {
         final SerializableResourceBundleMessageSource ret = new SerializableResourceBundleMessageSource();
         ret.setBasename("classpath:message");
         ret.setDefaultEncoding("UTF-8");
@@ -59,7 +52,7 @@ public class AppConfig extends WebMvcConfigurerAdapter {
     }
 
     @Override
-    public void addInterceptors(InterceptorRegistry registry){
+    public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(localeChangeInterceptor());
     }
 
@@ -70,11 +63,11 @@ public class AppConfig extends WebMvcConfigurerAdapter {
         return localChangeInterceptor;
     }
 
-    @Bean
-    public MultipartResolver multipartResolver(){
-        CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver();
-        multipartResolver.setMaxUploadSize(1000000);
-        return multipartResolver;
-    }
+//    @Bean
+//    public MultipartResolver filterMultipartResolver() {
+//        CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver();
+//        multipartResolver.setMaxUploadSize(1000000);
+//        return multipartResolver;
+//    }
 
 }

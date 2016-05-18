@@ -16,9 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by Bitee on 4/19/2016.
- */
+
 @CrossOrigin
 @RestController
 @RequestMapping("/user")
@@ -32,39 +30,52 @@ public class UserAuthenticationController {
     /**
      * Retrieves the currently logged in user.
      *
-     * @return A transfer containing the username and the roles
+     * @return A transfer containing the username and the roles.
      */
 
     @RequestMapping(method = RequestMethod.GET)
-    public UserTransfer getUser(){
+    public UserTransfer getUser() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         Object principal = authentication.getPrincipal();
-        UserDetails userDetails = (UserDetails) principal;
-        return new UserTransfer(userDetails.getUsername(),this.createRoleMap(userDetails));
+        UserDetails usersDetails = (UserDetails) principal;
+        return new UserTransfer(usersDetails.getUsername(), this.createRoleMap(usersDetails));
     }
-    private Map<String, Boolean> createRoleMap(UserDetails userDetails){
-        Map<String,Boolean> roles = new HashMap<String, Boolean>();
-        for(GrantedAuthority authority : userDetails.getAuthorities()){
-            roles.put(authority.getAuthority(),Boolean.TRUE);
+
+    private Map<String, Boolean> createRoleMap(UserDetails userDetails) {
+        Map<String, Boolean> roles = new HashMap<String, Boolean>();
+        for (GrantedAuthority authority : userDetails.getAuthorities()) {
+            roles.put(authority.getAuthority(), Boolean.TRUE);
         }
+
         return roles;
     }
 
     @RequestMapping(value = "/authenticate", method = RequestMethod.POST)
-    public TokenTransfer authenticate(@RequestBody String body){
-        //The body has been send by username=a&password=b format
+    public TokenTransfer authenticate(@RequestBody String body) {
+        // The body has been sent by username=a&password=b format
         String[] token = body.split("&");
-        String username = token[0].split("=")[1];
-        String password = token[1].split("=")[1];
-        UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(username,password);
+        String username;
+        try {
+            username = token[0].split("=")[1];
+        } catch (ArrayIndexOutOfBoundsException e) {
+            username = "";
+        }
+
+        String password;
+        try {
+            password = token[1].split("=")[1];
+        } catch (ArrayIndexOutOfBoundsException e) {
+            password = "";
+        }
+        UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(username, password);
         Authentication authentication = this.authenticationManager.authenticate(authenticationToken);
-        SecurityContextHolder.getContext()
-                .setAuthentication(authentication);
+        SecurityContextHolder.getContext().setAuthentication(authentication);
         /*
-        *Reload user as password of authentication principal will be null after authorization and
-        * password is needed for token generation
-         */
+         * Reload user as password of authentication principal will be null after authorization and
+		 * password is needed for token generation
+		 */
         UserDetails userDetails = this.userDetailsService.loadUserByUsername(username);
         return new TokenTransfer(TokenUtils.createToken(userDetails));
     }
 }
+

@@ -2,7 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="926d7d03-0ef5-4b31-9dfc-16a9a91a113c" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/app/CheckIn/Location.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/app/CheckIn/LocationController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/WebAppInitializer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/controller/LocationController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/dao/DbLocationDao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/dao/LocationDao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/Location.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/repository/LocationRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/LocationService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/LocationServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/camt/se331/shoppingcart/entity/ProductTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/camt/se331/shoppingcart/entity/SelectedProductTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/camt/se331/shoppingcart/entity/ShoppingCartTest.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/JS/bootstrap.min.js" afterPath="$PROJECT_DIR$/app/src/app/JS/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/index.route.js" afterPath="$PROJECT_DIR$/app/src/app/index.route.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/index.run.js" afterPath="$PROJECT_DIR$/app/src/app/index.run.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/index.scss" afterPath="$PROJECT_DIR$/app/src/app/index.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/product/ProductItem.html" afterPath="$PROJECT_DIR$/app/src/app/product/ProductItem.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/product/ProductT1.html" afterPath="$PROJECT_DIR$/app/src/app/product/ProductT1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/product/ProductT2.html" afterPath="$PROJECT_DIR$/app/src/app/product/ProductT2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/product/ProductT3.html" afterPath="$PROJECT_DIR$/app/src/app/product/ProductT3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/product/ProductT4.html" afterPath="$PROJECT_DIR$/app/src/app/product/ProductT4.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/product/productController.js" afterPath="$PROJECT_DIR$/app/src/app/product/productController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/AppConfig.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/AppConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/DatabaseInitializationBean.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/DatabaseInitializationBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/PersistenceContext.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/PersistenceContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/SecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/SecurityConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/security/AuthenticationTokenProcessingFilter.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/security/AuthenticationTokenProcessingFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/security/CustomUserDetailsService.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/security/CustomUserDetailsService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/security/RestAuthenticationEntryPoint.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/security/RestAuthenticationEntryPoint.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/security/SecurityUser.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/security/SecurityUser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/controller/ShoppingCartController.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/controller/ShoppingCartController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/controller/UserAuthenticationController.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/controller/UserAuthenticationController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/Image.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/Image.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/Role.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/Role.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/ShoppingCart.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/ShoppingCart.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/User.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/transfer/TokenTransfer.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/transfer/TokenTransfer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/transfer/UserTransfer.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/transfer/UserTransfer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/repository/RoleRepository.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/repository/RoleRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/repository/UserRepository.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/repository/UserRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/ShoppingCartService.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/ShoppingCartService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/ShoppingCartServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/ShoppingCartServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/UserServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/util/TokenUtils.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/util/TokenUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" />
     </list>
     <ignored path="lab10.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,18 +76,38 @@
       <file leaf-file-name="index.route.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/app/index.route.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+            <state relative-caret-position="196">
+              <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatabaseInitializationBean.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/DatabaseInitializationBean.java">
+      <file leaf-file-name="ProductItem.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/app/product/ProductItem.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+            <state relative-caret-position="736">
+              <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="productController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/app/product/productController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1360">
+              <caret line="80" column="6" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/app/index.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="604">
+              <caret line="3111" column="29" selection-start-line="3111" selection-start-column="29" selection-end-line="3111" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -66,15 +134,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/transfer/UserTransfer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/SecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/WebAppInitializer.java" />
-        <option value="$PROJECT_DIR$/app/src/app/index.module.js" />
-        <option value="$PROJECT_DIR$/app/src/app/security/SecurityController.js" />
-        <option value="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/util/TokenUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/controller/UserAuthenticationController.java" />
-        <option value="$PROJECT_DIR$/app/src/app/security/login.html" />
-        <option value="$PROJECT_DIR$/app/src/app/product/productList.html" />
         <option value="$PROJECT_DIR$/app/src/app/security/SecurityService.js" />
         <option value="$PROJECT_DIR$/app/src/app/security/Securitycontroller.js" />
         <option value="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/User.java" />
@@ -93,12 +152,6 @@
         <option value="$PROJECT_DIR$/app/src/app/index.config.js" />
         <option value="$PROJECT_DIR$/app/e2e/main.spec.js" />
         <option value="$PROJECT_DIR$/app/src/app/main/main.html" />
-        <option value="$PROJECT_DIR$/app/src/app/product/ProductT3.html" />
-        <option value="$PROJECT_DIR$/app/src/app/product/ProductT2.html" />
-        <option value="$PROJECT_DIR$/app/src/app/product/ProductT1.html" />
-        <option value="$PROJECT_DIR$/app/src/app/product/ProductT4.html" />
-        <option value="$PROJECT_DIR$/app/src/app/product/ProductItem.html" />
-        <option value="$PROJECT_DIR$/app/src/app/index.run.js" />
         <option value="$PROJECT_DIR$/app/src/app/Extras/404.html" />
         <option value="$PROJECT_DIR$/app/src/app/Extras/blog-home-1.html" />
         <option value="$PROJECT_DIR$/app/src/app/Extras/blog-home-2.html" />
@@ -108,15 +161,30 @@
         <option value="$PROJECT_DIR$/app/src/app/Extras/full-width.html" />
         <option value="$PROJECT_DIR$/app/src/app/Extras/pricing.html" />
         <option value="$PROJECT_DIR$/app/src/app/Extras/sidebar.html" />
-        <option value="$PROJECT_DIR$/app/src/app/JS/bootstrap.min.js" />
-        <option value="$PROJECT_DIR$/app/src/index.html" />
         <option value="$PROJECT_DIR$/app/src/app/Extras/about.html" />
         <option value="$PROJECT_DIR$/app/src/app/Extras/services.html" />
         <option value="$PROJECT_DIR$/app/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss" />
-        <option value="$PROJECT_DIR$/app/src/app/index.scss" />
+        <option value="$PROJECT_DIR$/app/src/app/JS/bootstrap.min.js" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/controller/ShoppingCartController.java" />
+        <option value="$PROJECT_DIR$/lab10.iml" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/se331/Lab11Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/security/AuthenticationTokenProcessingFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/PersistenceContext.java" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.properties" />
-        <option value="$PROJECT_DIR$/app/src/app/index.route.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/DatabaseInitializationBean.java" />
+        <option value="$PROJECT_DIR$/app/src/app/index.run.js" />
+        <option value="$PROJECT_DIR$/app/src/app/index.route.js" />
+        <option value="$PROJECT_DIR$/app/src/index.html" />
+        <option value="$PROJECT_DIR$/app/src/app/index.scss" />
+        <option value="$PROJECT_DIR$/app/src/app/product/ProductT1.html" />
+        <option value="$PROJECT_DIR$/app/src/app/product/ProductT2.html" />
+        <option value="$PROJECT_DIR$/app/src/app/product/ProductT3.html" />
+        <option value="$PROJECT_DIR$/app/src/app/product/ProductT4.html" />
+        <option value="$PROJECT_DIR$/app/src/app/product/productController.js" />
+        <option value="$PROJECT_DIR$/app/src/app/product/ProductItem.html" />
       </list>
     </option>
   </component>
@@ -153,8 +221,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="223" />
-    <option name="y" value="6" />
+    <option name="x" value="251" />
+    <option name="y" value="2" />
     <option name="width" value="1672" />
     <option name="height" value="1059" />
   </component>
@@ -214,6 +282,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -246,6 +315,18 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="se331" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -267,6 +348,32 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WatPhaSom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WatPhaSom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resource Bundle 'message'" />
+              <option name="myItemType" value="com.intellij.lang.properties.projectView.ResourceBundleNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -317,6 +424,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="se331" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lab11Application.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WatPhaSom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WatPhaSom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="se331" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="shoppingcart" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -340,6 +481,44 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="se331" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shoppingcart" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WatPhaSom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WatPhaSom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="se331" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -427,36 +606,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="product" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SE331-lab12complete-master" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files (x86)\nodejs\node.exe" />
     <property name="editor.config.accepted" value="true" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="camt.se331.shoppingcart.config.security" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\OtherGit\WatPhaSom\app\src\app\Extras" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\OtherGit\WatPhaSom\src\main\resources\pic" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\OtherGit\WatPhaSom\app\src\app\Extras" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="camt.se331.shoppingcart.config.security" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat">
+  <component name="RunManager" selected="Spring Boot.Lab11Application">
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
       <server-settings />
@@ -854,81 +1032,16 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <configuration default="false" name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.30" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
-      <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment>
-        <artifact name="lab10:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_lab10" />
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+    <configuration default="false" name="Lab11Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="54657" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="lab10:war exploded" />
-        </option>
-      </method>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="camt.se331.Lab11Application" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <module name="lab10" />
+      <envs />
+      <method />
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat" />
+      <item index="0" class="java.lang.String" itemvalue="Spring Boot.Lab11Application" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -969,7 +1082,8 @@
       <workItem from="1463392579211" duration="617000" />
       <workItem from="1463414884202" duration="301000" />
       <workItem from="1463557479987" duration="255000" />
-      <workItem from="1463557848438" duration="204000" />
+      <workItem from="1463557848438" duration="299000" />
+      <workItem from="1463561015543" duration="20008000" />
     </task>
     <task id="LOCAL-00001" summary="fix name languageController">
       <created>1461579028738</created>
@@ -982,7 +1096,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74911000" />
+    <option name="totallyTimeSpent" value="95014000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -994,25 +1108,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="223" y="6" width="1672" height="1059" extended-state="0" />
+    <frame x="251" y="2" width="1672" height="1059" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970026" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32997763" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32964426" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32940447" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833788" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33801296" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4384449" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912844" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44495413" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4449244" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35545906" sideWeight="0.49382716" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32161874" sideWeight="0.50617284" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1024,6 +1138,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1083,287 +1198,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/gulp/inject.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/gulp/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/gulp/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/gulp/styles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/gulp/unit-tests.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/gulp/watch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/favicon.ico">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/.bowerrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/.editorconfig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/.eslintrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/.yo-rc.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-538">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/karma.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-181">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/protractor.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/product/ProductItem.html" />
-    <entry file="file://$PROJECT_DIR$/app/src/app/product/ProductT2.html" />
-    <entry file="file://$PROJECT_DIR$/app/src/app/product/ProductT3.html" />
-    <entry file="file://$PROJECT_DIR$/app/src/app/product/ProductT4.html" />
-    <entry file="file://$PROJECT_DIR$/app/src/app/product/ProductT1.html" />
-    <entry file="file://$PROJECT_DIR$/app/src/app/index.run.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="3" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/Extras/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1445">
-          <caret line="85" column="54" selection-start-line="85" selection-start-column="54" selection-end-line="85" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/Extras/blog-home-1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/Extras/blog-home-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="36" column="59" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/Extras/blog-post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-731">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/Extras/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/Extras/faq.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2431">
-          <caret line="143" column="14" selection-start-line="143" selection-start-column="14" selection-end-line="143" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/Extras/full-width.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/Extras/pricing.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-470">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/Extras/sidebar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/startbootstrap-modern-business-1.0.5/startbootstrap-modern-business-1.0.5/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="20" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/JS/font-awesome.min.css" />
-    <entry file="file://$PROJECT_DIR$/app/src/app/JS/jquery.js" />
-    <entry file="file://$USER_HOME$/Desktop/startbootstrap-modern-business-1.0.5/startbootstrap-modern-business-1.0.5/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/JS/bootstrap.min.js" />
-    <entry file="file://$PROJECT_DIR$/app/bower_components/bootstrap/dist/js/bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3939">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="4739" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/startbootstrap-modern-business-1.0.5/startbootstrap-modern-business-1.0.5/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="297" column="22" selection-start-line="151" selection-start-column="7" selection-end-line="297" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/Extras/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/Extras/services.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="109" column="23" selection-start-line="109" selection-start-column="23" selection-end-line="109" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-79">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="107" column="19" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="397" column="18" selection-start-line="397" selection-start-column="13" selection-end-line="397" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3162">
-          <caret line="186" column="0" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-629">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/app/main/main.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-340">
@@ -1372,26 +1206,410 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/index.route.js">
+    <entry file="file://$PROJECT_DIR$/app/src/app/Backup/CSS/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+        <state relative-caret-position="68">
+          <caret line="4" column="111" selection-start-line="4" selection-start-column="101" selection-end-line="4" selection-end-column="111" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/JS/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="444" selection-start-line="5" selection-start-column="444" selection-end-line="5" selection-end-column="444" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/Image.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-265">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../SE331-lab12complete-master/lab11.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="98" selection-start-line="0" selection-start-column="0" selection-end-line="88" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/controller/ShoppingCartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+          <folding>
+            <marker date="1463564531272" expanded="false" signature="52:83" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/controller/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/WebAppInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-272">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/security/AuthenticationTokenProcessingFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/security/RestAuthenticationEntryPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/security/SecurityUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/setup.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/security/CustomUserDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/camt/se331/Lab11ApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/se331/Lab11Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab10.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="89" column="9" selection-start-line="89" selection-start-column="9" selection-end-line="89" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/npm-debug.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/PersistenceContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+        <state relative-caret-position="519">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/DatabaseInitializationBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+        <state relative-caret-position="303">
+          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/index.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/index.constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/index.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/.bowerrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/decorate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/.yo-rc.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-935">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-93">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/karma.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1487">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-561">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/protractor.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/startbootstrap-modern-business-1.0.5/startbootstrap-modern-business-1.0.5/portfolio-item.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="158" column="28" selection-start-line="158" selection-start-column="28" selection-end-line="158" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/product/editProduct.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="85" selection-start-line="23" selection-start-column="85" selection-end-line="23" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/index.run.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="44" column="33" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="604">
+          <caret line="3111" column="29" selection-start-line="3111" selection-start-column="29" selection-end-line="3111" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/product/ProductT2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="38" column="57" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/product/ProductT3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/product/ProductT4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="33" column="51" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/product/productService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/product/productList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-352">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/product/ProductT1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="926">
+          <caret line="80" column="24" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/index.route.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/product/productController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="80" column="6" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/product/ProductItem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
           <folding />
         </state>
       </provider>

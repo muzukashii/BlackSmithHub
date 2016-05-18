@@ -60,7 +60,17 @@ class PersistenceContext {
     @Autowired
     private Environment env;
 
-    @Bean
+
+//    @Bean
+//    public DataSource embedDataSource(){
+//        EmbeddedDatabaseBuilder builder = new EmbeddedDatabaseBuilder();
+//        EmbeddedDatabase db = builder.setType(EmbeddedDatabaseType.HSQL).setScriptEncoding("UTF-8").build();
+//
+//        return db;
+//    }
+
+
+
     public BoneCPDataSource boneCPDataSource(){
         BoneCPDataSource boneCPDataSource = new BoneCPDataSource();
         boneCPDataSource.setDriverClass(env.getRequiredProperty(PROPERTY_NAME_DB_DRIVER_CLASS));

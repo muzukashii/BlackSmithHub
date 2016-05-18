@@ -3060,6 +3060,18 @@ select[multiple].input-lg {
   right: 0;
   bottom: 0;
 }
+.img-hoverC img{
+  position: absolute!important;
+  margin: auto !important;
+  max-width: 250px!important;
+  max-height: 300px!important;
+  height: auto;
+  width: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 .img-hover1{
   height: 300px;
   width: 700px;
@@ -3089,6 +3101,17 @@ select[multiple].input-lg {
   border: 2px solid whitesmoke;
   border-radius: 50%;
 }
+.img-hoverC{
+  height: 500px!important;
+  width: 750px!important;
+  background-color: #dddddd;
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
+}
+.carousel-control{
+  border: 0 white !important;
+}
+
 .img-hover2:hover,
 .img-hover3:hover,
 .img-hover4:hover{

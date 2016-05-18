@@ -2,13 +2,12 @@ package camt.se331.shoppingcart.service.util;
 
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.codec.Hex;
-import org.springframework.stereotype.Service;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 /**
- * Created by Bitee on 4/19/2016.
+ * Created by Dto on 4/20/2015.
  */
 public class TokenUtils {
 
