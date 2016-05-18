@@ -40,10 +40,31 @@
                 <h4>Subheading</h4>
                 <p>{{product.description}}</p>
                 <a class="btn btn-primary" ng-href="#/ProductItem/{{product.id}}">View Product</a>
+              <a class="btn btn-primary" data-toggle="modal" data-target="#ModalCart" ng-show="hasRole('user')" ng-click="vm.addToCart(product)">Add to Cart</a>
             </div>
           </div>
         </div>
         <!-- /.row -->
+
+      <!-- Modal -->
+      <div class="modal fade" id="ModalCart" role="dialog">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" >{{HeadSuccess}}</h4>
+              <h4 class="modal-title" ng-hide="result">{{HeadFail}}</h4>
+            </div>
+            <div class="modal-body">
+              <p style="color: white" >{{result}}</p>
+              <p style="color: white" ng-hide="result">{{error}}</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
         <!--&lt;!&ndash; Project Two &ndash;&gt;-->
         <!--<div class="row">-->
@@ -65,33 +86,33 @@
 
         <hr>
 
-        <!-- Pagination -->
-        <div class="row text-center">
-            <div class="col-lg-12">
-                <ul class="pagination">
-                    <li>
-                        <a href="#">&laquo;</a>
-                    </li>
-                    <li class="active">
-                        <a href="#">1</a>
-                    </li>
-                    <li>
-                        <a href="#">2</a>
-                    </li>
-                    <li>
-                        <a href="#">3</a>
-                    </li>
-                    <li>
-                        <a href="#">4</a>
-                    </li>
-                    <li>
-                        <a href="#">5</a>
-                    </li>
-                    <li>
-                        <a href="#">&raquo;</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- /.row -->
+        <!--&lt;!&ndash; Pagination &ndash;&gt;-->
+        <!--<div class="row text-center">-->
+            <!--<div class="col-lg-12">-->
+                <!--<ul class="pagination">-->
+                    <!--<li>-->
+                        <!--<a href="#">&laquo;</a>-->
+                    <!--</li>-->
+                    <!--<li class="active">-->
+                        <!--<a href="#">1</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">2</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">3</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">4</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">5</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">&raquo;</a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--&lt;!&ndash; /.row &ndash;&gt;-->
     </div>

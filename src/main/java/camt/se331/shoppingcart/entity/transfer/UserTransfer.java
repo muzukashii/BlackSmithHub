@@ -3,23 +3,30 @@ package camt.se331.shoppingcart.entity.transfer;
 import java.util.Map;
 
 /**
- * Created by Bitee on 4/19/2016.
+ * Created by Dto on 4/20/2015.
  */
 public class UserTransfer {
     private final String name;
 
-    private final Map<String,Boolean> roles;
+    private final Map<String, Boolean> roles;
 
-    public String getName() {
-        return name;
-    }
 
-    public Map<String, Boolean> getRoles() {
-        return roles;
-    }
-
-    public UserTransfer(String name, Map<String, Boolean> roles) {
-        this.name = name;
+    public UserTransfer(String userName, Map<String, Boolean> roles)
+    {
+        this.name = userName;
         this.roles = roles;
     }
+
+
+    public String getName()
+    {
+        return this.name;
+    }
+
+
+    public Map<String, Boolean> getRoles()
+    {
+        return this.roles;
+    }
+
 }

@@ -51,7 +51,6 @@
           $rootScope.user = user;
           $rootScope.HeadSuccess ="Welcome";
           $rootScope.result = "Login Success";
-          $location.path("/index")
         })
       },//unsuccess connection
         function(error) {

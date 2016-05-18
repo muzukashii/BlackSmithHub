@@ -4,7 +4,7 @@ import camt.se331.shoppingcart.entity.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
- * Created by Bitee on 4/19/2016.
+ * Created by Dto on 4/20/2015.
  */
-public interface RoleRepository extends JpaRepository<Role,Long> {
+public interface RoleRepository extends JpaRepository<Role,Long>{
 }

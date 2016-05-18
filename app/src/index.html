@@ -47,56 +47,59 @@
             <a href="#/About">About</a>
           </li>
           <li>
-            <a href="#/Service">Services</a>
-          </li>
-          <li>
             <a href="#/Contact">Contact</a>
           </li>
+          <!--<li class="dropdown">-->
+            <!--<a class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>-->
+            <!--<ul class="dropdown-menu">-->
+              <!--<li>-->
+                <!--<a href="#/Blog1">Blog Home 1</a>-->
+              <!--</li>-->
+              <!--<li>-->
+                <!--<a href="#/Blog2">Blog Home 2</a>-->
+              <!--</li>-->
+              <!--<li>-->
+                <!--<a href="#/BlogPost">Blog Post</a>-->
+              <!--</li>-->
+            <!--</ul>-->
+          <!--</li>-->
+          <!--<li class="dropdown">-->
+            <!--<a class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>-->
+            <!--<ul class="dropdown-menu">-->
+              <!--<li>-->
+                <!--<a href="#/FullWidth">Full Width Page</a>-->
+              <!--</li>-->
+              <!--<li>-->
+                <!--<a href="#/SideBar">Sidebar Page</a>-->
+              <!--</li>-->
+              <!--<li>-->
+                <!--<a href="#/FAQ">FAQ</a>-->
+              <!--</li>-->
+              <!--<li>-->
+                <!--<a href="#/404Page">404</a>-->
+              <!--</li>-->
+              <!--<li>-->
+                <!--<a href="#/Pricing">Pricing Table</a>-->
+              <!--</li>-->
+            <!--</ul>-->
+          <!--</li>-->
+
           <li>
             <a href="#/Product1">Product</a>
           </li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li>
-                <a href="#/Blog1">Blog Home 1</a>
-              </li>
-              <li>
-                <a href="#/Blog2">Blog Home 2</a>
-              </li>
-              <li>
-                <a href="#/BlogPost">Blog Post</a>
-              </li>
-            </ul>
+
+          <li>
+            <a href="#/shoppingCart" ng-show="hasRole('user')">Shopping Cart</a>
           </li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li>
-                <a href="#/FullWidth">Full Width Page</a>
-              </li>
-              <li>
-                <a href="#/SideBar">Sidebar Page</a>
-              </li>
-              <li>
-                <a href="#/FAQ">FAQ</a>
-              </li>
-              <li>
-                <a href="#/404Page">404</a>
-              </li>
-              <li>
-                <a href="#/Pricing">Pricing Table</a>
-              </li>
-            </ul>
-          </li>
+
           <li>
             <button class="btn btn-primary btn-nav" data-toggle="modal" data-target="#Modal-Login" ng-hide="user">Login</button>
           </li>
           <li>
-            <a ng-show="user">Hello !! {{user.name}}</a>
+            <a style="color: yellow!important;" ng-show="user">Hello !! {{user.name}}</a>
           </li>
           <li>
-            <button type="submit" ng-show="user" class="btn btn-danger btn-nav" ng-click="logout()">LogOut</button>
+            <button type="submit" ng-show="user" class="btn btn-danger btn-nav" data-toggle="modal" data-target="#Modal-Prompt2" ng-click="logout()">LogOut</button>
           </li>
         </ul>
       </div>
@@ -127,6 +130,13 @@
           <input type="password" placeholder="Password..." class="form-control" id="password" ng-model ="login.password">
         </div>
         <div class="form-group">
+            <div class="checkbox">
+              <label style="color: white">
+                <input type="checkbox" ng-model="login.rememberMe"> Remember me
+              </label>
+            </div>
+        </div>
+        <div class="form-group">
         <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#Modal-Prompt" ng-click="login.login()" data-dismiss="modal">Sign in!</button>
           </div>
       </form>
@@ -151,6 +161,24 @@
         <div class="modal-body">
           <p style="color: white" >{{result}}</p>
           <p style="color: white" ng-hide="result">{{error}}</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="Modal-Prompt2" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" >Result</h4>
+        </div>
+        <div class="modal-body">
+          <p style="color: white" >Logout Succeed</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

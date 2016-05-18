@@ -26,14 +26,12 @@
       delete $rootScope.user;
       delete $rootScope.authToken;
       $cookies.remove('authToken');
-      $location.path("/")
+      $location.path("/index")
     };
-
-
 
     /*Try getting valid user from cookie or go to login page */
     var originalPath=$location.path();
-    $location.path("/");
+    $location.path("/index");
     var authToken = $cookies.get('authToken');
     if(authToken != undefined){
       $rootScope.authToken = authToken;
@@ -43,6 +41,7 @@
       })
     }
     $rootScope.initialized=true;
+    $rootScope.shoppingCart = {};
   }
 
   /** @ngInject */

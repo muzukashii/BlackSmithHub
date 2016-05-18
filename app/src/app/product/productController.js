@@ -5,6 +5,7 @@
     .module('app')
     .controller('addProductController', addProductController)
     .controller('listProductController', listProductController)
+    .controller('viewProductController',viewProductController)
     .controller('editProductController', editProductController);
 
 
@@ -34,7 +35,7 @@
 
 
   /** @ngInject */
-  function listProductController( $scope,$rootScope, productService, $route, queryProductService) {
+  function listProductController( $scope,$rootScope, productService, $route, queryProductService ,cartManagement) {
     var vm = this;
     //$http.get("/product/").success(function (data) {
     vm.queryPromise = productService.query(function (data) {
@@ -65,20 +66,54 @@
       });
     }
 
+    vm.addToCart = function (product) {
+      $rootScope.HeadSuccess=null;
+      $rootScope.HeadFail=null;
+      $rootScope.result=null;
+      $rootScope.error=null;
+      product.images = null;
+      cartManagement.addToCart({id:product.id},$rootScope.shoppingCart, function (shoppingCart) {
+        //success event
+        $rootScope.shoppingCart = shoppingCart;
+        $rootScope.HeadSuccess ="Status";
+        $rootScope.result = "Add Product Success";
+
+      }, function (error) {
+        // fail event
+        if(error.status=="401"){
+          $rootScope.HeadFail ="Warning";
+          $rootScope.error="Add Product Fail";
+        }
+      })
+      $route.reload();
+    }
+
   }
 
+
+  /** @ngInject */
+  function viewProductController($routeParams, productService) {
+    var vm = this;
+    var id = $routeParams.id;
+    vm.imageProduct=null;
+    vm.productDetail=null;
+    productService.get({id:id},function (data) {
+      vm.productDetail=data;
+      vm.imageProduct = vm.productDetail.images;
+    })
+
+  }
 
   /** @ngInject */
   function editProductController( $http, $routeParams, $location, $rootScope, productService) {
     var vm = this;
     vm.addPerson = false;
     vm.editPerson = true;
-    vm.productDetail = null;
     var id = $routeParams.id;
     productService.get({id:id},
       // success function
      function(data){
-       vm.productDetail=data;
+       vm.product=data;
      }
     )
 

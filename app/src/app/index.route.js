@@ -35,7 +35,19 @@
     }).
     when('/ProductItem/:id',{
       templateUrl: 'app/product/ProductItem.html',
-        controller: 'editProductController'
+      controller: 'viewProductController',
+      controllerAs: 'vm'
+    }).
+    when('/shoppingCart/:id',{
+      templateUrl: 'app/shoppingcart/shoppingCart.html',
+      controller: 'showShoppingCartController',
+      controllerAs: 'vm'
+    }).
+    when('/shoppingCart',{
+      templateUrl: 'app/shoppingcart/shoppingCart.html',
+      controller: 'shoppingCartController',
+      controllerAs: 'vm'
+
     }).
     when('/About',{
       templateUrl: 'app/Extras/about.html'

@@ -17,7 +17,7 @@ public class Image {
     byte[] content;
     String contentType;
 
-    @Temporal(TemporalType.TIME)
+    @Temporal(TemporalType.TIMESTAMP)
     Date created;
 
     public Image() {
