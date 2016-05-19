@@ -4,13 +4,13 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">{{vm.productDetail.name}}
+                <h1 class="page-header">{{productDetail.name}}
                     <small>Product Description</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="#/index">Home</a>
                     </li>
-                    <li class="active">{{vm.productDetail.name}}</li>
+                    <li class="active">{{productDetail.name}}</li>
                 </ol>
             </div>
         </div>
@@ -30,10 +30,10 @@
 
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
-                        <div class="item active img-hoverC"  ng-repeat="imagePro in vm.productDetail.images | limitTo:1">
+                        <div class="item active img-hoverC"  ng-repeat="imagePro in productDetail.images | limitTo:1">
                           <img class="img-responsive" ng-src="data:{{imagePro.contentType}};base64,{{imagePro.content}}" alt="">
                         </div>
-                      <div class="item img-hoverC" ng-repeat="imagePro in vm.productDetail.images | limitTo : 1-vm.productDetail.images.length">
+                      <div class="item img-hoverC" ng-repeat="imagePro in productDetail.images | limitTo : 1-productDetail.images.length">
                         <img class="img-responsive" ng-src="data:{{imagePro.contentType}};base64,{{imagePro.content}}" alt="">
                       </div>
                     </div>
@@ -49,8 +49,9 @@
             </div>
 
             <div class="col-md-4">
-                <h3>{{vm.productDetail.name}}</h3>
-                <p>{{vm.productDetail.description}}</p>
+                <h3>{{productDetail.name}}</h3>
+                <p>{{productDetail.description}}</p>
+              <a class="btn btn-primary" data-toggle="modal" data-target="#ModalCart" ng-show="hasRole('user')" ng-click="addToCart(productDetail)">Add to Cart</a>
                 <h3>Product Details</h3>
                 <ul>
                     <li>CMU</li>
@@ -62,15 +63,20 @@
         </div>
 
       <hr>
-
+      <div ng-show="user" ng-controller="reviewController">
       <!-- Comments Form -->
       <div class="well">
         <h4>Leave a Comment:</h4>
-        <form role="form">
+        <form role="form" ng-submit="addData(datas)">
           <div class="form-group">
-            <textarea class="form-control" rows="3"></textarea>
+            <h3>Name : <input ng-model="data.name" type="text" id="data.name"></h3>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <div class="form-group">
+            <textarea ng-model="data.textarea" id="textarea" class="form-control" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+          <button type="submit" id="bt" class="btn btn-primary">Submit</button>
+          </div>
         </form>
       </div>
 
@@ -79,42 +85,36 @@
       <!-- Posted Comments -->
 
       <!-- Comment -->
-      <div class="media">
+      <div class="media" ng-repeat="data in datas">
         <a class="pull-left" href="#">
           <img class="media-object" src="http://placehold.it/64x64" alt="">
         </a>
         <div class="media-body">
-          <h4 class="media-heading">Start Bootstrap
-            <small>August 25, 2014 at 9:30 PM</small>
+          <h4 class="media-heading">{{data.name}}
+            <!--<small>August 25, 2014 at 9:30 PM</small>-->
           </h4>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+         {{data.textarea}}
         </div>
       </div>
+      </div>
+    </div>
 
-      <!-- Comment -->
-      <div class="media">
-        <a class="pull-left" href="#">
-          <img class="media-object" src="http://placehold.it/64x64" alt="">
-        </a>
-        <div class="media-body">
-          <h4 class="media-heading">Start Bootstrap
-            <small>August 25, 2014 at 9:30 PM</small>
-          </h4>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-          <!-- Nested Comment -->
-          <div class="media">
-            <a class="pull-left" href="#">
-              <img class="media-object" src="http://placehold.it/64x64" alt="">
-            </a>
-            <div class="media-body">
-              <h4 class="media-heading">Nested Start Bootstrap
-                <small>August 25, 2014 at 9:30 PM</small>
-              </h4>
-              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-            </div>
+    <!-- Modal -->
+    <div class="modal fade" id="ModalCart" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title" >{{HeadSuccess}}</h4>
+            <h4 class="modal-title" ng-hide="result">{{HeadFail}}</h4>
           </div>
-          <!-- End Nested Comment -->
+          <div class="modal-body">
+            <p style="color: white" >{{result}}</p>
+            <p style="color: white" ng-hide="result">{{error}}</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
         </div>
       </div>
-        <!-- /.row -->
     </div>

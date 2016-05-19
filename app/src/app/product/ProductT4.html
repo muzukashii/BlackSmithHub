@@ -30,7 +30,7 @@
         <!-- Projects Row -->
         <div class="row">
           <div ng-repeat="product in vm.products">
-            <div class="col-md-3 img-portfolio img-hover4 border" ng-repeat="image in product.images" ng-if="$index%4==0">
+            <div class="col-md-3 img-portfolio img-hover4 border" ng-repeat="image in product.images |limitTo:1" ng-if="$index%4==0">
               <a href="#/ProductItem/{{product.id}}">
                 <img class="img-responsive" ng-src="data:{{image.contentType}};base64,{{image.content}}" alt="">
               </a>

@@ -6,8 +6,21 @@
     .controller('addProductController', addProductController)
     .controller('listProductController', listProductController)
     .controller('viewProductController',viewProductController)
+    .controller('reviewController',reviewController)
     .controller('editProductController', editProductController);
 
+
+  /** @ngInject */
+  function reviewController($scope) {
+
+    $scope.datas = [];
+    $scope.data = {};
+    $scope.addData = function (datas) {
+      datas.push($scope.data);
+      $scope.data = {};
+    }
+
+  }
 
   /** @ngInject */
   function addProductController($http,$scope, $location, $rootScope, productService) {
@@ -96,8 +109,8 @@
 
 
   /** @ngInject */
-  function viewProductController($routeParams, productService) {
-    var vm = this;
+  function viewProductController($routeParams, productService ,$rootScope ,cartManagement ,$route) {
+    var vm = $rootScope;
     var id = $routeParams.id;
     vm.imageProduct=null;
     vm.productDetail=null;
@@ -105,6 +118,27 @@
       vm.productDetail=data;
       vm.imageProduct = vm.productDetail.images;
     })
+    vm.addToCart = function (product) {
+      $rootScope.HeadSuccess=null;
+      $rootScope.HeadFail=null;
+      $rootScope.result=null;
+      $rootScope.error=null;
+      product.images = null;
+      cartManagement.addToCart({id:product.id},$rootScope.shoppingCart, function (shoppingCart) {
+        //success event
+        $rootScope.shoppingCart = shoppingCart;
+        $rootScope.HeadSuccess ="Status";
+        $rootScope.result = "Add Product Success";
+
+      }, function (error) {
+        // fail event
+        if(error.status=="401"){
+          $rootScope.HeadFail ="Warning";
+          $rootScope.error="Add Product Fail";
+        }
+      })
+      $route.reload();
+    }
 
   }
 

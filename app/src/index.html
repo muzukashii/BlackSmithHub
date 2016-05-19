@@ -24,7 +24,6 @@
     <!-- endbuild -->
     <!-- /.container -->
 
-
   </head>
   <body ng-controller = "LoginController as login" >
   <!-- Navigation -->
@@ -38,16 +37,16 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" ng-href="#/index">Wat Pha Som</a>
+        <a class="navbar-brand" ng-href="#/index" translate>menu.Watphasom</a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="#/About">About</a>
+            <a href="#/About" translate>menu.About</a>
           </li>
           <li>
-            <a href="#/Contact">Contact</a>
+            <a href="#/Contact" translate>menu.Contact</a>
           </li>
           <!--<li class="dropdown">-->
             <!--<a class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>-->
@@ -65,36 +64,37 @@
           <!--</li>-->
 
           <li>
-            <a href="#/Product1">Product</a>
+            <a href="#/Product1" translate>menu.Product</a>
           </li>
 
           <li>
-            <a href="#/shoppingCart" ng-show="hasRole('user')">Shopping Cart</a>
+            <a href="#/shoppingCart" ng-show="hasRole('user')" translate>menu.shoppingcart</a>
           </li>
 
           <li>
-            <button class="btn btn-primary btn-nav" data-toggle="modal" data-target="#Modal-Login" ng-hide="user">Login</button>
+            <button class="btn btn-primary btn-nav" data-toggle="modal" data-target="#Modal-Login" ng-hide="user" translate>menu.Login</button>
           </li>
           <li class="dropdown" ng-show="user">
             <button class="dropdown-toggle btn btn-danger btn-nav" data-toggle="dropdown">{{user.name}}<b class="caret"></b></button>
             <ul class="dropdown-menu">
               <li>
-                <a href="#/ManageProduct" ng-show="hasRole('admin')">Manage Product</a>
+                <a style="text-align: center" href="#/ManageProduct" ng-show="hasRole('admin')" translate>admin.ManageProduct</a>
               </li>
               <li>
-                <a href="#/FAQ">FAQ</a>
-              </li>
-              <li>
-                <a href="#/404Page">404</a>
-              </li>
-              <li>
-                <a href="#/Pricing">Pricing Table</a>
-              </li>
-              <li>
-                <input style="color:whitesmoke; width: 100%" type="button" value="LogOut" class="btn-danger" data-toggle="modal" data-target="#Modal-Prompt2" ng-click="logout()"/>
+                <button translate style="color:whitesmoke; width: 100%" type="button" class="btn-danger" data-toggle="modal" data-target="#Modal-Prompt2" ng-click="logout()">menu.Logout</button>
               </li>
             </ul>
           </li>
+          <div  ng-controller="LanguageController">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse">
+                <ul  class="nav navbar-nav navbar-right">
+                  <li ng-class="{'active':currentLocale== 'en'}"><a href="" ng-click="changeLanguage('en')">EN </a></li>
+                  <li ng-class="{'active':currentLocale== 'th'}"><a href="" ng-click="changeLanguage('th')">TH</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
           <!--<li>-->
             <!--<a style="color: yellow!important;" ng-show="user">Hello !! {{user.name}}</a>-->
           <!--</li>-->

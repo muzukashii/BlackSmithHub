@@ -25,6 +25,8 @@
     $rootScope.logout = function () {
       delete $rootScope.user;
       delete $rootScope.authToken;
+      delete $rootScope.result;
+      delete $rootScope.HeadSuccess;
       $cookies.remove('authToken');
       $location.path("/index")
     };

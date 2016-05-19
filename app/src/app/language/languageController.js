@@ -6,8 +6,8 @@
 
 
   /** @ngInject */
-  function languageController($translate, $location, $locale) {
-    var vm = this;
+  function languageController($translate, $location, $locale ,$scope) {
+    var vm = $scope;
     var currentLocal = $locale.id.substring(0, 2);
 
     vm.currentLocale = currentLocal;
