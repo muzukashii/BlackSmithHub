@@ -29,7 +29,7 @@
                                        placeholder="amount" name="productdescription" required/></td>
           <td class="text-right">{{selectedProduct.product.netPrice | number:2}}</td>
           <td class="text-right">{{vm.totalEach($index) |number:2}}</td>
-          <td class="text-right"><a><span ng-click="vm.removeProduct($index)">remove</span></a></td>
+          <td class="text-right"><button type="submit" class="btn btn-danger"><span ng-click="vm.removeProduct($index)">remove</span></button></td>
         </tr>
         <tr>
           <th></th>

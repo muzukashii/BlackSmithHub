@@ -1,0 +1,80 @@
+<!-- Page Content -->
+<div class="container">
+
+  <!-- Page Heading/Breadcrumbs -->
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 ng-show="editProduct" class="page-header">Edit Product
+      <small>{{product.name}}</small>
+    </h1>
+      <h1 ng-show="addProduct" class="page-header">Add Product
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#/index">Home</a>
+        </li>
+        <li class="active"  ng-show="editProduct">Edit Product</li>
+        <li class="active"  ng-show="addProduct">Add Product</li>
+      </ol>
+    </div>
+  </div>
+  <!-- /.row -->
+
+  <!-- Portfolio Item Row -->
+  <div class="row">
+    <div class="col-md-4">
+    <form name="editform" novalidate flow-init>
+        <div class="form-group">
+          <input type="file" flow-btn/>
+        <div class="carousel-inner" ng-repeat="file in $flow.files">
+          <a>{{$index+1}}</a>
+          <a>{{file.name}}</a>
+          <div class="item active img-hover4">
+            <img flow-img="$flow.files[{{$index}}]">
+          </div>
+        </div>
+      </div>
+        <div class="form-group">
+          <label for="productname">name :</label>
+          <input ng-model="product.name" class="form-control" id="productname" name="productname" placeholder="name" required/>
+
+          <div class="alert alert-danger" role="alert" ng-show="editform.productname.$error.required">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span>
+            Product name is Required!
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="productdescription">Description :</label>
+          <input ng-model="product.description" class="form-control" id="productdescription"
+                 placeholder="description" name="productdescription" required/>
+
+          <div class="alert alert-danger" role="alert" ng-show="editform.productdescription.$error.required">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span>
+            Description is Required!
+          </div>
+
+        </div>
+        <div class="form-group">
+          <label for="productprice">price :</label>
+          <input ng-model="product.totalPrice" name="productprice" class="form-control" id="productprice"
+                 placeholder="price" type="number" required/>
+
+          <div class="alert alert-danger" role="alert" ng-show="editform.productprice.$error.required">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span>
+            Price is Required!
+          </div>
+          <div class="alert alert-danger" role="alert" ng-show="editform.productprice.$error.number">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span>
+            Enter the number!!
+          </div>
+          </div>
+          <button type="submit" class="btn btn-default" ng-click="addProduct($flow)" ng-show="addProduct">Add</button>
+          <button type="submit" class="btn btn-default" ng-click="editProduct()" ng-show="editProduct">Edit</button>
+    </form>
+    </div>
+  </div>
+  <hr>
+</div>

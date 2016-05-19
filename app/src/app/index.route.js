@@ -47,8 +47,22 @@
       templateUrl: 'app/shoppingcart/shoppingCart.html',
       controller: 'shoppingCartController',
       controllerAs: 'vm'
-
     }).
+    when('/ManageProduct',{
+      templateUrl: 'app/product/manageProduct.html',
+      controller: 'listProductController',
+      controllerAs: 'vm'
+    }).
+    when('/addProduct',{
+        templateUrl: 'app/product/AEProduct.html',
+        controller: 'addProductController',
+        controllerAs: 'addProductController'
+      }).
+      when('/editProduct/:id',{
+        templateUrl: 'app/product/AEProduct.html',
+        controller: 'editProductController',
+        controllerAs: 'editProductController'
+      }).
     when('/About',{
       templateUrl: 'app/Extras/about.html'
     }).

@@ -11,7 +11,7 @@
 
   /** @ngInject */
   function addProductController($http, $location, $rootScope, productService) {
-    var vm = this;
+    var vm = $rootScope;
     vm.product = {};
     vm.addPerson = true;
     vm.editPerson = false;
@@ -26,7 +26,7 @@
         flowFiles.opts.query = {productid: productid};
         flowFiles.upload();
 
-        $rootScope.addSuccess = true;
+        vm.addSuccess = true;
         $location.path("listProduct");
       });
     }
@@ -106,9 +106,9 @@
 
   /** @ngInject */
   function editProductController( $http, $routeParams, $location, $rootScope, productService) {
-    var vm = this;
-    vm.addPerson = false;
-    vm.editPerson = true;
+    var vm = $rootScope;
+    vm.addProduct = false;
+    vm.editProduct = true;
     var id = $routeParams.id;
     productService.get({id:id},
       // success function
@@ -122,7 +122,7 @@
       //$http.put("/product", $scope.product).then(function () {
       productService.update({id: vm.product.id}, vm.product, function () {
         $rootScope.editSuccess = true;
-        $location.path("listProduct");
+        $location.path("/ManageProduct");
       });
     }
   }
