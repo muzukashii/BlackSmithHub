@@ -37,10 +37,13 @@
           </div>
             <div class="col-md-4">
                 <h3>{{product.name}}</h3>
-                <h4>Subheading</h4>
                 <p>{{product.description}}</p>
-                <a class="btn btn-primary" ng-href="#/ProductItem/{{product.id}}">View Product</a>
-              <a class="btn btn-primary" data-toggle="modal" data-target="#ModalCart" ng-show="hasRole('user')" ng-click="addToCart(product)">Add to Cart</a>
+              <hr>
+              <h4 ng-show="hasRole('userretail')||hasRole('userwholesale')">Price</h4>
+              <p ng-show="hasRole('userretail')">{{product.totalPrice}}</p>
+              <p ng-show="hasRole('userwholesale')">{{product.wholesalePrice}}</p>
+                <a class="btn btn-danger" ng-href="#/ProductItem/{{product.id}}">View Product</a>
+              <a class="btn btn-danger" data-toggle="modal" data-target="#ModalCart" ng-show="hasRole('userretail')||hasRole('userwholesale')" ng-click="addToCart(product)">Add to Cart</a>
             </div>
           </div>
         </div>

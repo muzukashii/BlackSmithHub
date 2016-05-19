@@ -68,7 +68,7 @@
           </li>
 
           <li>
-            <a href="#/shoppingCart" ng-show="hasRole('user')" translate>menu.shoppingcart</a>
+            <a href="#/shoppingCart" ng-show="hasRole('userretail')||hasRole('userwholesale')" translate>menu.shoppingcart</a>
           </li>
 
           <li>
@@ -132,7 +132,7 @@
         <div class="form-group">
             <div class="checkbox">
               <label style="color: white">
-                <input type="checkbox" ng-model="login.rememberMe"> Stay on this site
+                <input type="checkbox" ng-model="login.rememberMe" checked="checked"> Stay on this site
               </label>
             </div>
         </div>

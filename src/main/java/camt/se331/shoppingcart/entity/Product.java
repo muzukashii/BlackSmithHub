@@ -18,6 +18,56 @@ public class Product implements Comparable{
     String name;
     String description;
     Double totalPrice;
+    Double wholesalePrice;
+
+    public Product(Long id,String name, String description, Double totalPrice, Double wholesalePrice,Image image) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.totalPrice = totalPrice;
+        this.wholesalePrice = wholesalePrice;
+        this.images.add(image) ;
+    }
+    public Product(Long id,String name, String description, Double totalPrice, Double wholesalePrice) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.totalPrice = totalPrice;
+        this.wholesalePrice = wholesalePrice;
+
+    }
+    public Double getWholesalePrice() {
+        return wholesalePrice;
+    }
+
+    public void setWholesalePrice(Double wholesalePrice) {
+        this.wholesalePrice = wholesalePrice;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Product product = (Product) o;
+
+        if (!id.equals(product.id)) return false;
+        if (!name.equals(product.name)) return false;
+        if (!description.equals(product.description)) return false;
+        if (!totalPrice.equals(product.totalPrice)) return false;
+        return wholesalePrice.equals(product.wholesalePrice);
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id.hashCode();
+        result = 31 * result + name.hashCode();
+        result = 31 * result + description.hashCode();
+        result = 31 * result + totalPrice.hashCode();
+        result = 31 * result + wholesalePrice.hashCode();
+        return result;
+    }
 
     @OneToMany(fetch = FetchType.EAGER)
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
@@ -30,8 +80,6 @@ public class Product implements Comparable{
         this.totalPrice = totalPrice;
         this.images.add(image) ;
     }
-
-
 
     public Set<Image> getImages() {
         return images;
@@ -59,29 +107,6 @@ public class Product implements Comparable{
 
     public Double getTax(){
         return 0.0;
-    }
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Product)) return false;
-
-        Product product = (Product) o;
-
-        if (description != null ? !description.equals(product.description) : product.description != null) return false;
-        if (id != null ? !id.equals(product.id) : product.id != null) return false;
-        if (name != null ? !name.equals(product.name) : product.name != null) return false;
-        if (totalPrice != null ? !totalPrice.equals(product.totalPrice) : product.totalPrice != null) return false;
-
-        return true;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = name != null ? name.hashCode() : 0;
-        result = 31 * result + (description != null ? description.hashCode() : 0);
-        result = 31 * result + (totalPrice != null ? totalPrice.hashCode() : 0);
-        result = 31 * result + (id != null ? id.hashCode() : 0);
-        return result;
     }
 
     public Product(Long id,String name, String description, Double price) {

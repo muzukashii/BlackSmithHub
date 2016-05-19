@@ -29,6 +29,7 @@
     vm.totalEach = function (index) {
       return vm.cart.selectedProducts[index].product.totalPrice * vm.cart.selectedProducts[index].amount;
     }
+    vm.totalEach2 = function (index) { return vm.cart.selectedProducts[index].product.wholesalePrice * vm.cart.selectedProducts[index].amount; }
 
     vm.saveCart = function (cart){
       cart.user = {};
@@ -45,6 +46,15 @@
       var total = 0;
       angular.forEach(vm.cart.selectedProducts, function (item) {
         total += item.amount * item.product.totalPrice;
+      })
+
+      return total;
+    }
+
+    vm.total2 = function () {
+      var total = 0;
+      angular.forEach(vm.cart.selectedProducts, function (item) {
+        total += item.amount * item.product.wholesalePrice;
       })
 
       return total;

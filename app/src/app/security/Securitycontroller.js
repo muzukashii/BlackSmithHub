@@ -31,7 +31,7 @@
   }
 
   /** @ngInject */
-  function  LoginController ($scope, $rootScope, $location, $cookies, UserService) {
+  function  LoginController ($route,$scope, $rootScope, $location, $cookies, UserService) {
     var vm = this;
     vm.rememberMe = false;
     vm.login = function () {
@@ -51,6 +51,7 @@
           $rootScope.user = user;
           $rootScope.HeadSuccess ="Welcome";
           $rootScope.result = "Login Success";
+          $location.path("/index");
         })
       },//unsuccess connection
         function(error) {
@@ -61,5 +62,6 @@
         }
       )
     }
+
   }
 })();

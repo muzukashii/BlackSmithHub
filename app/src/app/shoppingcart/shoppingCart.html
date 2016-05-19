@@ -27,8 +27,10 @@
           <td>{{selectedProduct.product.description}}</td>
           <td class=" col-xs-1"><input ng-model="selectedProduct.amount" class="form-control text-right" id="selectedproductamount"
                                        placeholder="amount" name="productdescription" required/></td>
-          <td class="text-right">{{selectedProduct.product.netPrice | number:2}}</td>
-          <td class="text-right">{{vm.totalEach($index) |number:2}}</td>
+          <td class="text-right" ng-show="hasRole('userretail')">{{selectedProduct.product.totalPrice | number:2}}</td>
+          <td class="text-right" ng-show="hasRole('userwholesale')">{{selectedProduct.product.wholesalePrice  | number:2}}</td>
+          <td class="text-right" ng-show="hasRole('userretail')">{{vm.totalEach($index) |number:2}}</td>
+          <td class="text-right" ng-show="hasRole('userwholesale')">{{vm.totalEach2($index) |number:2}}</td>
           <td class="text-right"><button type="submit" class="btn btn-danger"><span ng-click="vm.removeProduct($index)">remove</span></button></td>
         </tr>
         <tr>
@@ -37,7 +39,8 @@
           <th></th>
           <th></th>
           <th></th>
-          <th class="text-right">{{vm.total() | number :2}}</th>
+          <th class="text-right" ng-show="hasRole('userretail')">{{vm.total() | number :2}}</th>
+          <th class="text-right" ng-show="hasRole('userwholesale')">{{vm.total2() | number :2}}</th>
 
         </tr>
 

@@ -51,7 +51,11 @@
             <div class="col-md-4">
                 <h3>{{productDetail.name}}</h3>
                 <p>{{productDetail.description}}</p>
-              <a class="btn btn-primary" data-toggle="modal" data-target="#ModalCart" ng-show="hasRole('user')" ng-click="addToCart(productDetail)">Add to Cart</a>
+              <hr>
+              <h4 ng-show="hasRole('userretail')||hasRole('userwholesale')">Price</h4>
+              <p ng-show="hasRole('userretail')">{{productDetail.totalPrice}}</p>
+              <p ng-show="hasRole('userwholesale')">{{productDetail.wholesalePrice}}</p>
+              <a class="btn btn-danger" data-toggle="modal" data-target="#ModalCart" ng-show="hasRole('userretail')||hasRole('userwholesale')" ng-click="addToCart(productDetail)">Add to Cart</a>
                 <h3>Product Details</h3>
                 <ul>
                     <li>CMU</li>
@@ -69,7 +73,7 @@
         <h4>Leave a Comment:</h4>
         <form role="form" ng-submit="addData(datas)">
           <div class="form-group">
-            <h3>Name : <input ng-model="data.name" type="text" id="data.name"></h3>
+            <h3>Name : <input ng-model="data.name" ng-value="user.name" type="text" id="data.name"></h3>
           </div>
           <div class="form-group">
             <textarea ng-model="data.textarea" id="textarea" class="form-control" rows="3"></textarea>
