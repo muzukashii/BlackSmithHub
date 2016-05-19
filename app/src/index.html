@@ -25,7 +25,7 @@
     <!-- /.container -->
 
   </head>
-  <body ng-controller = "LoginController as login" >
+  <body>
   <!-- Navigation -->
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
@@ -81,6 +81,9 @@
                 <a style="text-align: center" href="#/ManageProduct" ng-show="hasRole('admin')" translate>admin.ManageProduct</a>
               </li>
               <li>
+                <a style="text-align: center" href="#/ManageAccount" ng-show="hasRole('admin')">Manage Account</a>
+              </li>
+              <li>
                 <button translate style="color:whitesmoke; width: 100%" type="button" class="btn-danger" data-toggle="modal" data-target="#Modal-Prompt2" ng-click="logout()">menu.Logout</button>
               </li>
             </ul>
@@ -108,7 +111,7 @@
     <!-- /.container -->
   </nav>
   <!-- MODAL -->
-  <div class="modal fade" id="Modal-Login" tabindex="-1" role="dialog">
+  <div class="modal fade" id="Modal-Login" tabindex="-1" role="dialog" ng-controller = "LoginController as login">
     <div class="modal-dialog">
   <div class="modal-content">
     <div class="modal-header">
@@ -139,15 +142,51 @@
         <div class="form-group">
         <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#Modal-Prompt" ng-click="login.login()" data-dismiss="modal">Sign in!</button>
           </div>
+        <button class="btn btn-link" data-toggle="modal" data-target="#Modal-Register" data-dismiss="modal">Register</button>
       </form>
     </div>
     </div>
-      </div>
-
+    </div>
   </div>
-  <!--<li>-->
-    <!--<a class="alert alert-danger" style="color: white;" ng-show="error">{{error}}</a>-->
-  <!--</li>-->
+
+  <div class="modal fade" id="Modal-Register" tabindex="-1" role="dialog" ng-controller = "registerController">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true" class="glyphicon glyphicon-remove"></span>
+          </button>
+          <h3 class="modal-title" id="modal-register-label">Register to our site</h3>
+          <p>Please fill your information</p>
+        </div>
+
+        <div class="modal-body">
+          <form class="login-form">
+            <div class="form-group">
+              <label class="sr-only" for="nameR">Name</label>
+              <input type="text" placeholder="Name..." class="form-control" id="nameR" ng-model ="user.name">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="usernameR">Username</label>
+              <input type="text" placeholder="Username..." class="form-control" id="usernameR" ng-model ="user.username">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="emailR">Email</label>
+              <input type="email" placeholder="Email..." class="form-control" id="emailR" ng-model ="user.email">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="passwordR">Password</label>
+              <input type="password" placeholder="Password..." class="form-control" id="passwordR" ng-model ="user.password">
+            </div>
+
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary"  ng-click="addUser()" data-dismiss="modal">Register</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Modal -->
   <div class="modal fade" id="Modal-Prompt" role="dialog">

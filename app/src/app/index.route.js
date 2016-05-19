@@ -38,11 +38,11 @@
       controller: 'viewProductController',
       controllerAs: 'vm'
     }).
-    when('/shoppingCart/:id',{
-      templateUrl: 'app/shoppingcart/shoppingCart.html',
-      controller: 'showShoppingCartController',
-      controllerAs: 'vm'
-    }).
+    // when('/shoppingCart/:id',{
+    //   templateUrl: 'app/shoppingcart/shoppingCart.html',
+    //   controller: 'shoppingCartController',
+    //   controllerAs: 'vm'
+    // }).
     when('/shoppingCart',{
       templateUrl: 'app/shoppingcart/shoppingCart.html',
       controller: 'shoppingCartController',
@@ -51,6 +51,11 @@
     when('/ManageProduct',{
       templateUrl: 'app/product/manageProduct.html',
       controller: 'listProductController',
+      controllerAs: 'vm'
+    }).
+    when('/ManageAccount',{
+      templateUrl: 'app/security/manageAccount.html',
+      controller: 'AccountController',
       controllerAs: 'vm'
     }).
     when('/addProduct',{

@@ -9,6 +9,7 @@
   /** @ngInject */
   function ShoppingCartController(shoppingCartService,cartManagement,$scope, $rootScope, $routeParams,$log ) {
     var vm = this;
+    vm.cart =[];
     if ($rootScope.shoppingCart != null){
       vm.cart = $rootScope.shoppingCart;
     }else {

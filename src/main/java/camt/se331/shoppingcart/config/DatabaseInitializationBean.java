@@ -54,7 +54,7 @@ public class DatabaseInitializationBean implements InitializingBean {
         Calendar calendar = new GregorianCalendar(2015, 4, 7);
         shoppingCart.setSelectedProducts(selectedProducts);
         shoppingCart.setPurchaseDate(calendar.getTime());
-        shoppingCart.setId(1L);
+        shoppingCart.setId(2L);
         shoppingCartRepository.save(shoppingCart);
 
         // add user

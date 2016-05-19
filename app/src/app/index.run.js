@@ -27,6 +27,8 @@
       delete $rootScope.authToken;
       delete $rootScope.result;
       delete $rootScope.HeadSuccess;
+      delete $rootScope.error;
+      delete $rootScope.HeadFail;
       $cookies.remove('authToken');
       $location.path("/index")
     };

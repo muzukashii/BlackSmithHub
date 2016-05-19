@@ -3,6 +3,7 @@
   'use strict';
   angular
     .module('app')
+    .factory('registerService', registerService)
     .factory('UserService', UserService);
 
   /** @ngInject */
@@ -15,6 +16,15 @@
           header: {'Content-Type': 'application/x-www-form-urlencoded'}
         }
       })
+  }
+
+  /** @ngInject */
+  function registerService($resource){
+    return $resource('/regis', {}, {
+      update: {
+        method: 'PUT' // this method issues a PUT request
+      }});
+
   }
 
 })();

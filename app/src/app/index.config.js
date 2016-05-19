@@ -29,7 +29,7 @@
           var url = config.url;
 
           if (status == 401){
-            $location.path("/listProduct");
+            $location.path("/ManageProduct");
           }else{
             $rootScope.error = method + " on " + url + " failed with status " + status;
           }

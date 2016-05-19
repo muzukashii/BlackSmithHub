@@ -4,7 +4,54 @@
 (function () {
   angular
     .module('app')
+    .controller('registerController', registerController)
+    .controller('AccountController', AccountController)
     .controller('LoginController', LoginController);
+
+
+  /** @ngInject */
+  function registerController($http,$scope, $location ,registerService) {
+    var vm = $scope;
+    vm.user = {};
+    vm.addUser = function () {
+      registerService.save(vm.user);
+    }
+  }
+
+  /** @ngInject */
+  function AccountController( $scope,$rootScope, registerService, $route, queryProductService) {
+    var vm = this;
+    //$http.get("/product/").success(function (data) {
+    vm.queryPromise = registerService.query(function (data) {
+      // $scope.totalNetPrice= totalCalService.getTotalNetPrice(data);
+      vm.account = data;
+    }).$promise;
+
+
+    $scope.$on('$locationChangeStart', function () {
+      $rootScope.addSuccess = false;
+      $rootScope.editSuccess = false;
+      $rootScope.deleteSuccess = false;
+    });
+
+    vm.deleteAccount = function (id) {
+      var answer = confirm("Do you want to delete the product?");
+      if (answer) {
+        productService.delete({id: id}, function () {
+          $rootScope.deleteSuccess = true;
+          $route.reload();
+        })
+      }
+    }
+
+    vm.searchAccount = function (name) {
+      queryProductService.query({name: name}, function (data) {
+        vm.products = data;
+      });
+    }
+  }
+
+
   function  serializeData ( data ) {
     // If this is not an object, defer to native stringification.
     if ( ! angular.isObject ( data ) ){
