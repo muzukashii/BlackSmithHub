@@ -11,7 +11,7 @@ public class Image {
         @Id
     @GeneratedValue
     private Long id;
-
+    
     String fileName;
     @Lob
     byte[] content;

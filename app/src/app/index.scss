@@ -3127,6 +3127,21 @@ select[multiple].input-lg {
   border: 2px solid whitesmoke;
   border-radius: 50%;
 }
+.resizeImage img{
+  max-height: 200px;
+  max-width: 250px;
+  margin-left: 50px;
+}
+.thumbnail {
+  max-width: 200px;
+  max-height: 150px;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+.hoverR :hover{
+  background-color: black!important;
+
+}
 .carousel-control{
   border: 0 white !important;
 }

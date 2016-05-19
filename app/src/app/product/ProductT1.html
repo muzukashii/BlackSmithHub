@@ -29,13 +29,13 @@
 
         <!-- Project One -->
         <div class="row">
-          <div ng-repeat="product in vm.products">
-          <div ng-repeat="image in product.images" class="col-md-7 img-hover1">
-            <a href="#/ProductItem">
+          <div class="col-md-12" style="margin-top: 10px!important; padding-bottom: 10px!important; border-bottom: 1px dashed #c1c1c1" ng-repeat="product in vm.products">
+          <div ng-repeat="image in product.images" ng-if="$index%1==0" class="col-md-4 img-hover2">
+            <a href="#/ProductItem/{{product.id}}">
             <img class="img-responsive" ng-src="data:{{image.contentType}};base64,{{image.content}}" alt="">
               </a>
           </div>
-            <div class="col-md-5">
+            <div class="col-md-4">
                 <h3>{{product.name}}</h3>
                 <h4>Subheading</h4>
                 <p>{{product.description}}</p>

@@ -10,8 +10,8 @@
 
 
   /** @ngInject */
-  function addProductController($http, $location, $rootScope, productService) {
-    var vm = $rootScope;
+  function addProductController($http,$scope, $location, $rootScope, productService) {
+    var vm = $scope;
     vm.product = {};
     vm.addPerson = true;
     vm.editPerson = false;
@@ -27,8 +27,12 @@
         flowFiles.upload();
 
         vm.addSuccess = true;
-        $location.path("listProduct");
+        $location.path("/index");
       });
+    }
+
+    vm.clearSearch = function() {
+      vm.ImageInput = "";
     }
 
   }
@@ -105,8 +109,8 @@
   }
 
   /** @ngInject */
-  function editProductController( $http, $routeParams, $location, $rootScope, productService) {
-    var vm = $rootScope;
+  function editProductController( $http, $scope, $routeParams, $location, $rootScope, productService) {
+    var vm = $scope;
     vm.addProduct = false;
     vm.editProduct = true;
     var id = $routeParams.id;
@@ -118,12 +122,31 @@
     )
 
 
-    vm.editProduct = function () {
+    vm.editProduct = function (flowFiles) {
       //$http.put("/product", $scope.product).then(function () {
-      productService.update({id: vm.product.id}, vm.product, function () {
-        $rootScope.editSuccess = true;
-        $location.path("/ManageProduct");
+      productService.update({id: vm.product.id}, vm.product, function (data) {
+        var productid = data.id;
+        flowFiles.opts.target = 'http://localhost:8080/productImage/add';
+        flowFiles.opts.testChunks = false;
+        flowFiles.opts.query = {productid:productid};
+        flowFiles.upload();
+
+        vm.editSuccess = true;
+        $location.path("/index");
       });
+    }
+
+    vm.removeImage = function(pdId, imgId) {
+      var r = confirm("Are you sure?");
+      if (r == true) {
+        $http.delete("http://localhost:8080/productImage/remove?productid="+pdId+"&imageid="+imgId).then(function () {
+          $http.get("http://localhost:8080/product/" + pdId).success(function (data) {
+            vm.product = data;
+          });
+        }, function(){
+          console.log("FAILED");
+        });
+      }
     }
   }
 })();

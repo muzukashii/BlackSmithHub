@@ -19,20 +19,45 @@
   </div>
   <!-- /.row -->
 
-  <!-- Portfolio Item Row -->
   <div class="row">
     <div class="col-md-4">
     <form name="editform" novalidate flow-init>
         <div class="form-group">
-          <input type="file" flow-btn/>
-        <div class="carousel-inner" ng-repeat="file in $flow.files">
-          <a>{{$index+1}}</a>
-          <a>{{file.name}}</a>
-          <div class="item active img-hover4">
+          <input data-ng-model="ImageInput" type="file" flow-btn/>
+          <table>
+        <tr ng-repeat="file in $flow.files">
+          <td>{{$index+1}}</td>
+          <td>{{file.name}}</td>
+          <td>
+            <div class="resizeImage">
             <img flow-img="$flow.files[{{$index}}]">
+              <button style="position: absolute; top: 5px; left: 5px; z-index: 999" href="#" data-ng-click="clearSearch">
+                <i class="glyphicon glyphicon-remove-circle"></i>
+              </button>
           </div>
+          </td>
+        </tr>
+          </table>
+      </div>
+
+      <div ng-show="editProduct">
+        <div style="position: relative" ng-repeat="image in product.images" class="text-center">
+          <img ng-src="data:{{image.contentType}};base64, {{image.content}}" class="thumbnail"/>
+          <button style="position: absolute; top: 5px; left: 5px; z-index: 999" href="#" ng-click="removeImage(product.id, image.id)">
+            <i class="glyphicon glyphicon-remove-circle"></i>
+          </button>
         </div>
       </div>
+
+      <!--<div ng-show="addProduct">-->
+        <!--<div style="position: relative" ng-repeat="image in product.images" class="text-center">-->
+          <!--<img ng-src="data:{{image.contentType}};base64, {{image.content}}" class="thumbnail"/>-->
+          <!--<button style="position: absolute; top: 5px; left: 5px; z-index: 999" href="#" ng-click="clearSearch()">-->
+            <!--<i class="glyphicon glyphicon-remove-circle"></i>-->
+          <!--</button>-->
+        <!--</div>-->
+      <!--</div>-->
+
         <div class="form-group">
           <label for="productname">name :</label>
           <input ng-model="product.name" class="form-control" id="productname" name="productname" placeholder="name" required/>

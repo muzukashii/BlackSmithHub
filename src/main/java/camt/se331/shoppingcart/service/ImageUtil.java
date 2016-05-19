@@ -42,7 +42,8 @@ public class ImageUtil {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return image;
+        Image imageResize = ImageUtil.resizeImage(image,200);
+        return imageResize;
 
     }
 
@@ -54,7 +55,7 @@ public class ImageUtil {
             // change the image byte array to Buffer Image
             BufferedImage bufferedImage = ImageIO.read(imageStream);
             //Scale the image using the default api
-            BufferedImage scaledImage = Scalr.resize(bufferedImage,100);
+            BufferedImage scaledImage = Scalr.resize(bufferedImage,width);
 
             //Convert BufferedImage to byte
             // convert BufferedImage to byte array
