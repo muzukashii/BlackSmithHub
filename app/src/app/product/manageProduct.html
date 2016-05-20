@@ -34,7 +34,7 @@
 
   <!-- Project One -->
   <div class="row">
-    <div class="col-md-12" style="margin-top: 10px!important; padding-bottom: 10px!important; border-bottom: 1px dashed #c1c1c1" ng-repeat="product in vm.products">
+    <div class="col-md-12" style="margin-top: 10px!important; padding-bottom: 10px!important; border-bottom: 1px dashed #c1c1c1" ng-repeat="product in products">
       <div ng-repeat="image in product.images" class="col-md-7 img-hoverM">
         <a href="#/ProductItem/{{product.id}}">
           <img class="img-responsive" ng-src="data:{{image.contentType}};base64,{{image.content}}" alt="">
@@ -45,7 +45,7 @@
         <h4>Subheading</h4>
         <p>{{product.description}}</p>
         <a class="btn btn-primary" ng-href="#/editProduct/{{product.id}}">Edit Product</a>
-        <a type="button" class="btn btn-danger" ng-click="vm.deleteProduct(product.id)">Delete Product</a>
+        <a type="button" class="btn btn-danger" ng-click="deleteProduct(product.id)">Delete Product</a>
       </div>
     </div>
   </div>

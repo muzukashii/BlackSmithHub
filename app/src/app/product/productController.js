@@ -53,7 +53,7 @@
 
   /** @ngInject */
   function listProductController( $scope,$rootScope, productService, $route, queryProductService ,cartManagement) {
-    var vm = this;
+    var vm = $scope;
     //$http.get("/product/").success(function (data) {
     vm.queryPromise = productService.query(function (data) {
       // $scope.totalNetPrice= totalCalService.getTotalNetPrice(data);
