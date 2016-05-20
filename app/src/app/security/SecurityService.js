@@ -4,6 +4,7 @@
   angular
     .module('app')
     .factory('registerService', registerService)
+    .factory('changeRoleToAdmin', changeRoleToAdmin)
     .factory('UserService', UserService);
 
   /** @ngInject */
@@ -20,7 +21,16 @@
 
   /** @ngInject */
   function registerService($resource){
-    return $resource('/regis', {}, {
+    return $resource('/regis/:id', { id: '@_id' }, {
+      update: {
+        method: 'PUT' // this method issues a PUT request
+      }});
+
+  }
+
+  /** @ngInject */
+  function changeRoleToAdmin($resource){
+    return $resource('/changera/:id', { id: '@_id' }, {
       update: {
         method: 'PUT' // this method issues a PUT request
       }});

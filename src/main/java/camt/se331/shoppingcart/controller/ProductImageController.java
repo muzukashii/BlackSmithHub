@@ -38,7 +38,7 @@ public class ProductImageController {
                 image.setFileName(multipartFile.getOriginalFilename());
                 image.setContentType(multipartFile.getContentType());
                 image.setContent(multipartFile.getBytes());;
-                image.setCreated(Calendar.getInstance().getTime());
+                image.setCreated("");
                 productService.addImage(product,image);
             }
         }catch (Exception e){

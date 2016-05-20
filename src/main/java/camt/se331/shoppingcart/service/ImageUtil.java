@@ -38,7 +38,7 @@ public class ImageUtil {
                 bos.write(buf,0,readNum);
             }
             image.setContent(bos.toByteArray());
-            image.setCreated(Calendar.getInstance().getTime());
+            image.setCreated("");
         } catch (IOException e) {
             e.printStackTrace();
         }

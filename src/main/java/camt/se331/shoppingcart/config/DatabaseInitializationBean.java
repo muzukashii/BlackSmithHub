@@ -42,25 +42,25 @@ public class DatabaseInitializationBean implements InitializingBean {
         };
         productRepository.save(Arrays.asList(initProduct));
 
-
-        ShoppingCart shoppingCart = new ShoppingCart();
-        List<SelectedProduct> selectedProducts = new ArrayList<>();
-        SelectedProduct[] initSelectedProduct = {
-                new SelectedProduct(initProduct[2], 5),
-                new SelectedProduct(initProduct[4], 2),
-                new SelectedProduct(initProduct[1], 1),
-        };
-        selectedProducts.addAll(Arrays.asList(initSelectedProduct));
-        Calendar calendar = new GregorianCalendar(2015, 4, 7);
-        shoppingCart.setSelectedProducts(selectedProducts);
-        shoppingCart.setPurchaseDate(calendar.getTime());
-        shoppingCart.setId(2L);
-        shoppingCartRepository.save(shoppingCart);
+//
+//        ShoppingCart shoppingCart = new ShoppingCart();
+//        List<SelectedProduct> selectedProducts = new ArrayList<>();
+//        SelectedProduct[] initSelectedProduct = {
+//                new SelectedProduct(initProduct[2], 5),
+//                new SelectedProduct(initProduct[4], 2),
+//                new SelectedProduct(initProduct[1], 1),
+//        };
+//        selectedProducts.addAll(Arrays.asList(initSelectedProduct));
+//        Calendar calendar = new GregorianCalendar(2015, 4, 7);
+//        shoppingCart.setSelectedProducts(selectedProducts);
+//        shoppingCart.setPurchaseDate(calendar.getTime());
+//        shoppingCart.setId(2L);
+//        shoppingCartRepository.save(shoppingCart);
 
         // add user
-        Role adminRole = new Role("admin");
-        Role userRole = new Role("userretail");
-        Role userRole2 = new Role("userwholesale");
+        Role adminRole = new Role("Admin");
+        Role userRole = new Role("Retail");
+        Role userRole2 = new Role("WholeSale");
 
 
         User admin = new User();

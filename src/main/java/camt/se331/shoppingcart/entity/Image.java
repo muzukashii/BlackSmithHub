@@ -17,8 +17,8 @@ public class Image {
     byte[] content;
     String contentType;
 
-    @Temporal(TemporalType.TIMESTAMP)
-    Date created;
+
+    String  created;
 
     public Image() {
     }
@@ -55,15 +55,15 @@ public class Image {
         this.contentType = contentType;
     }
 
-    public Date getCreated() {
+    public String  getCreated() {
         return created;
     }
 
-    public void setCreated(Date create) {
+    public void setCreated(String  create) {
         this.created = create;
     }
 
-    public Image(String fileName, byte[] content, String contentType, Date created) {
+    public Image(String fileName, byte[] content, String contentType, String  created) {
 
         this.fileName = fileName;
         this.content = content;

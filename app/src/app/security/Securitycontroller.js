@@ -19,14 +19,31 @@
   }
 
   /** @ngInject */
-  function AccountController( $scope,$rootScope, registerService, $route, queryProductService) {
-    var vm = this;
+  function AccountController( $scope,$rootScope, registerService, $route, queryProductService,changeRoleToAdmin) {
+    var vm = $scope;
     //$http.get("/product/").success(function (data) {
     vm.queryPromise = registerService.query(function (data) {
       // $scope.totalNetPrice= totalCalService.getTotalNetPrice(data);
       vm.account = data;
     }).$promise;
 
+
+
+    vm.updateAccount = function () {
+      //$http.put("/product", $scope.product).then(function () {
+      registerService.update({id: vm.account.id}, vm.account, function () {
+        vm.Test1 = null;
+        vm.editSuccess = true;
+        $location.path("/index");
+      });
+    }
+
+    vm.changeRoleToAdmin = function () {
+      alert("Hello")
+      changeRoleToAdmin.update($scope.user, function (data) {
+        vm.account=data;
+      })
+    }
 
     $scope.$on('$locationChangeStart', function () {
       $rootScope.addSuccess = false;

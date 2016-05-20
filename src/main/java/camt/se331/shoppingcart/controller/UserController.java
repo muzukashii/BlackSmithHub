@@ -30,5 +30,15 @@ public class UserController {
         return userService.findAll();
     }
 
+    @RequestMapping(value = "regis/{id}",method = RequestMethod.PUT)
+    public  User edit(@PathVariable("id") Long id,@RequestBody User user, BindingResult bindingResult){
+        return userService.updateUser(user);
+    }
+
+    @RequestMapping(value = "changera/{id}",method = RequestMethod.PUT)
+    public @ResponseBody User update(@RequestBody User user, BindingResult bindingResult){
+        return userService.ChangeRoleUserToAdmin(user);
+    }
+
 
 }

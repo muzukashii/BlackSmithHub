@@ -24,30 +24,34 @@
     </div>
   </div>
 
-  <div class="col-md-12" style="margin-top: 25px!important;">
-    <a type="button" href="#/addProduct" class="btn btn-danger" style="margin-left: 50%;border-radius: 5px">
-      Add Product
-    </a>
-  </div>
-
   <div class="col-md-12" style="padding-bottom: 40px; border-bottom: 1px dashed #c1c1c1"></div>
 
   <!-- Project One -->
   <div class="row">
-    <div class="col-md-6" style="margin-top: 10px!important; padding-bottom: 10px!important; border-bottom: 1px dashed #c1c1c1" ng-repeat="account in vm.account">
+    <div class="col-md-6" style="margin-top: 10px!important; padding-bottom: 10px!important; border-bottom: 1px dashed #c1c1c1" ng-repeat="user in account">
       <!--<div ng-repeat="image in product.images" class="col-md-7 img-hoverM">-->
         <!--<a href="#/ProductItem/{{product.id}}">-->
           <!--<img class="img-responsive" ng-src="data:{{image.contentType}};base64,{{image.content}}" alt="">-->
         <!--</a>-->
       <!--</div>-->
       <div class="col-md-12" style="text-align: center">
-        <h3>Username :<p>{{account.username}}</p></h3>
+        <h3>Username :<p>{{user.username}}</p></h3>
 
-        <h3>Password :<p>{{account.password}}</p></h3>
+        <h3>Password :<p>{{user.password}}</p></h3>
 
-        <h4>Type :<p>{{account.roles}}</p></h4>
+        <h4>Type :<p>{{user.roles}}</p></h4>
 
-        <a class="btn btn-primary" ng-href="#/editAccount/{{account.id}}">Edit Account</a>
+        <button ng-click="changeRoleToAdmin(user)">ChangeRole</button>
+
+        {{Test1}}
+
+        <form name="myForm">
+          <label>Color (null not allowed):
+            <select ng-model="roles2" ng-options="type.roles for type in types"></select>
+          </label><br/>
+          <button type="submit" ng-click="updateAccount()">Update Account</button>
+        </form>
+
         <a type="button" class="btn btn-danger" ng-click="vm.deleteAccount(account.id)">Delete Account</a>
       </div>
     </div>

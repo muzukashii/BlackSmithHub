@@ -68,7 +68,7 @@
           </li>
 
           <li>
-            <a href="#/shoppingCart" ng-show="hasRole('userretail')||hasRole('userwholesale')" translate>menu.shoppingcart</a>
+            <a href="#/shoppingCart" ng-show="hasRole('Retail')||hasRole('WholeSale')" translate>menu.shoppingcart</a>
           </li>
 
           <li>
@@ -78,10 +78,10 @@
             <button class="dropdown-toggle btn btn-danger btn-nav" data-toggle="dropdown">{{user.name}}<b class="caret"></b></button>
             <ul class="dropdown-menu">
               <li>
-                <a style="text-align: center" href="#/ManageProduct" ng-show="hasRole('admin')" translate>admin.ManageProduct</a>
+                <a style="text-align: center" href="#/ManageProduct" ng-show="hasRole('Admin')" translate>admin.ManageProduct</a>
               </li>
               <li>
-                <a style="text-align: center" href="#/ManageAccount" ng-show="hasRole('admin')">Manage Account</a>
+                <a style="text-align: center" href="#/ManageAccount" ng-show="hasRole('Admin')">Manage Account</a>
               </li>
               <li>
                 <button translate style="color:whitesmoke; width: 100%" type="button" class="btn-danger" data-toggle="modal" data-target="#Modal-Prompt2" ng-click="logout()">menu.Logout</button>

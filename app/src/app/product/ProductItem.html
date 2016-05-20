@@ -52,10 +52,10 @@
                 <h3>{{productDetail.name}}</h3>
                 <p>{{productDetail.description}}</p>
               <hr>
-              <h4 ng-show="hasRole('userretail')||hasRole('userwholesale')">Price</h4>
-              <p ng-show="hasRole('userretail')">{{productDetail.totalPrice}}</p>
-              <p ng-show="hasRole('userwholesale')">{{productDetail.wholesalePrice}}</p>
-              <a class="btn btn-danger" data-toggle="modal" data-target="#ModalCart" ng-show="hasRole('userretail')||hasRole('userwholesale')" ng-click="addToCart(productDetail)">Add to Cart</a>
+              <h4 ng-show="hasRole('Retail')||hasRole('WholeSale')">Price</h4>
+              <p ng-show="hasRole('Retail')">{{productDetail.totalPrice}}</p>
+              <p ng-show="hasRole('WholeSale')">{{productDetail.wholesalePrice}}</p>
+              <a class="btn btn-danger" data-toggle="modal" data-target="#ModalCart" ng-show="hasRole('Retail')||hasRole('WholeSale')" ng-click="addToCart(productDetail)">Add to Cart</a>
                 <h3>Product Details</h3>
                 <ul>
                     <li>CMU</li>

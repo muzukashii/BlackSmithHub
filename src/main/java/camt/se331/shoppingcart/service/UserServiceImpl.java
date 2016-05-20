@@ -48,8 +48,21 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public User updateUser(User user) {
+        return userRepository.save(user);
+    }
+
+    @Override
+    public User ChangeRoleUserToAdmin(User user) {
+        Role userRole = new Role("Admin");
+        Set<Role> roles = new HashSet<>();
+        user.setRoles(roles);
+        return userRepository.save(user);
+    }
+
+    @Override
     public User addUser(User user) {
-        Role userRole = new Role("userretail");
+        Role userRole = new Role("Retail");
         Set<Role> roles2 = new HashSet<>();
         roles2.add(userRole);
         user.setRoles(roles2);
