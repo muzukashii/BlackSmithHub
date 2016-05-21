@@ -1,6 +1,7 @@
 package camt.se331.shoppingcart.controller;
 
 import camt.se331.shoppingcart.entity.Product;
+import camt.se331.shoppingcart.repository.ProductRepository;
 import camt.se331.shoppingcart.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
@@ -18,6 +19,10 @@ public class ProductController {
     @Autowired
     ProductService productService;
 
+    public ProductController(ProductRepository pro) {
+    }
+
+
     @RequestMapping(value = "product",method = RequestMethod.GET)
     public  List<Product> list(){
         return productService.getProducts();
@@ -29,7 +34,7 @@ public class ProductController {
         return productService.getProductsByName(name);
     }
     @RequestMapping(value = "product",method = RequestMethod.POST)
-    public @ResponseBody Product add(@RequestBody Product product, BindingResult bindingResult){
+    public @ResponseBody Product add(@RequestBody Product product){
         return productService.addProduct(product);
     }
 
@@ -44,7 +49,9 @@ public class ProductController {
     }
 
     @RequestMapping(value = "product/{id}",method = RequestMethod.DELETE)
-    public  Product edit(@PathVariable("id") Long id){
+    public  Product remove(@PathVariable("id") Long id){
         return productService.deleteProduct(id);
     }
+
+
 }

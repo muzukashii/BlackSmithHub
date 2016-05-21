@@ -22,7 +22,7 @@ public class User {
     private String name;
     private String email;
     private String password;
-    private Date dob;
+//    private Date dob;
     @ManyToMany(fetch= FetchType.EAGER)
     // Cascade and CascadeType must be the org.hibernate.annotation
     @Cascade(CascadeType.ALL)
@@ -34,6 +34,8 @@ public class User {
     private Set<ShoppingCart> shoppingCarts;
     public User() {
     }
+
+
 
     public Set<ShoppingCart> getShoppingCarts() {
         return shoppingCarts;
@@ -55,7 +57,7 @@ public class User {
         if (name != null ? !name.equals(user.name) : user.name != null) return false;
         if (email != null ? !email.equals(user.email) : user.email != null) return false;
         if (password != null ? !password.equals(user.password) : user.password != null) return false;
-        if (dob != null ? !dob.equals(user.dob) : user.dob != null) return false;
+//        if (dob != null ? !dob.equals(user.dob) : user.dob != null) return false;
         return !(roles != null ? !roles.equals(user.roles) : user.roles != null);
 
     }
@@ -67,7 +69,7 @@ public class User {
         result = 31 * result + (name != null ? name.hashCode() : 0);
         result = 31 * result + (email != null ? email.hashCode() : 0);
         result = 31 * result + (password != null ? password.hashCode() : 0);
-        result = 31 * result + (dob != null ? dob.hashCode() : 0);
+//        result = 31 * result + (dob != null ? dob.hashCode() : 0);
         result = 31 * result + (roles != null ? roles.hashCode() : 0);
         return result;
     }
@@ -81,14 +83,22 @@ public class User {
         this.username = username;
     }
 
-    public User(Long id, String name,String username, String email, String password, Date dob) {
+    public User(Long id, String name,String username, String email, String password) {
         this.id = id;
         this.name = name;
         this.username = username;
 
         this.email = email;
         this.password = password;
-        this.dob = dob;
+//        this.dob = dob;
+    }
+    public User(User user) {
+        user.id = id;
+        user.name = name;
+        user.username = username;
+        user.email = email;
+        user.password = password;
+//        this.dob = dob;
     }
 
     public Long getId() {
@@ -123,13 +133,13 @@ public class User {
         this.password = password;
     }
 
-    public Date getDob() {
-        return dob;
-    }
+//    public Date getDob() {
+//        return dob;
+//    }
 
-    public void setDob(Date dob) {
-        this.dob = dob;
-    }
+//    public void setDob(Date dob) {
+//        this.dob = dob;
+//    }
 
     public Set<Role> getRoles() {
         return roles;
@@ -146,7 +156,7 @@ public class User {
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
-                ", dob=" + dob +
+//                ", dob=" + dob +
                 ", roles=" + roles +
                 '}';
     }

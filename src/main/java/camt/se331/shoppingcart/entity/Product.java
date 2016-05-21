@@ -14,11 +14,11 @@ import java.util.Set;
 public class Product implements Comparable{
     @Id
     @GeneratedValue
-    Long id;
-    String name;
-    String description;
-    Double totalPrice;
-    Double wholesalePrice;
+     Long id;
+     String name;
+     String description;
+     Double totalPrice;
+     Double wholesalePrice;
 
     public Product(Long id,String name, String description, Double totalPrice, Double wholesalePrice,Image image) {
         this.id = id;
@@ -144,5 +144,13 @@ public class Product implements Comparable{
     public int compareTo(Object o) {
 
         return (int) (this.getId() - ((Product)o).getId());
+    }
+
+    public Product(Product product){
+        this.id = product.id;
+        this.name = product.name;
+        this.description = product.description;
+        this.totalPrice = product.totalPrice;
+        this.wholesalePrice = product.wholesalePrice;
     }
 }

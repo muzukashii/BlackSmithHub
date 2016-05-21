@@ -14,12 +14,16 @@ public class SelectedProduct {
     Product product;
     Integer amount;
 
-    public Double getTotalPrice(){
-        return 0.0;
+    public Double getTotalPrice()
+    {
+        double result = product.totalPrice*amount;
+        return result;
     }
 
-    public SelectedProduct() {
-
+    public Double getWholeSalePrice()
+    {
+        double result2 = product.wholesalePrice*amount;
+        return result2;
     }
 
     public Product getProduct() {
